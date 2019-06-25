@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:background="@color/color_Primary"
+    android:orientation="vertical">
+
+   <LinearLayout
+       android:background="#F6F7F9"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/trans_1000px">
+       <LinearLayout
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:clipChildren="false"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <TextView
+               android:background="#F6F7F9"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/trans_46px"
+               android:gravity="center"
+               android:text="选择币种"
+               android:textColor="@color/color_font3"
+               android:textSize="@dimen/trans_27px"/>
+
+           <android.support.v7.widget.RecyclerView
+               android:id="@+id/recycler_view"
+               android:layout_width="match_parent"
+               android:clipChildren="false"
+               android:layout_height="0dp"
+               android:layout_weight="1"/>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_weight="3.5"
+           android:layout_width="0dp"
+           android:clipChildren="false"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <TextView
+               android:background="#F6F7F9"
+               android:layout_marginLeft="@dimen/trans_24px"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/trans_48px"
+               android:gravity="center_vertical"
+               android:text="交易币种"
+               android:textColor="@color/color_font3"
+               android:textSize="@dimen/trans_27px"/>
+
+           <LinearLayout
+               android:background="@color/white"
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="0dp">
+               <android.support.v7.widget.RecyclerView
+                   android:id="@+id/recycler_view2"
+                   android:layout_width="match_parent"
+                   android:clipChildren="false"
+                   android:layout_height="match_parent"/>
+           </LinearLayout>
+
+       </LinearLayout>
+   </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trans_1px"
+        android:background="@color/base_mask" />
+
+
+</LinearLayout>

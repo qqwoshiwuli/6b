@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <com.fivefivelike.mybaselibrary.view.IconFontTextview
+        android:id="@+id/tv_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/trans_15px"
+        android:paddingLeft="@dimen/trans_30px"
+        android:paddingRight="@dimen/trans_30px"
+        android:paddingTop="@dimen/trans_15px"
+        android:text=""
+        android:background="@drawable/select_default_click"
+        android:textColor="@color/color_font1"
+        android:textSize="@dimen/text_trans_34px"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+</LinearLayout>

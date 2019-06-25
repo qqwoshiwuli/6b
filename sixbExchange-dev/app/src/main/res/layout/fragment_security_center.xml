@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/base_mask"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar_with_statusbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trans_20px"
+        />
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_Primary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/trans_30px"
+            android:text="资金密码"
+            android:textColor="@color/color_font1"
+            android:textSize="@dimen/text_trans_34px"/>
+
+        <com.fivefivelike.mybaselibrary.view.IconFontTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/trans_30px"
+            android:text="@string/ic_Next"
+            android:textColor="@color/color_font3"
+            android:textSize="@dimen/text_trans_34px"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

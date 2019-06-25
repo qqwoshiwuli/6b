@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tl="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar_with_statusbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.tablayout.CommonTabLayout
+            android:id="@+id/tl_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/trans_90px"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            tl:tl_indicator_color="@color/mark_color"
+            tl:tl_indicator_height="@dimen/trans_2px"
+            tl:tl_indicator_width_equal_title="true"
+            tl:tl_tab_space_equal="true"
+            tl:tl_textSelectColor="@color/mark_color"
+            tl:tl_textUnselectColor="@color/color_font2"
+            tl:tl_textsize="@dimen/text_trans_32px"
+            tl:tl_underline_color="#1A000000"
+            tl:tl_underline_height="0dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/trans_1px"
+            android:background="@color/base_mask"/>
+    </LinearLayout>
+
+    <com.circledialog.view.NoSlideViewPager
+        android:id="@+id/vp_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+    </com.circledialog.view.NoSlideViewPager>
+</LinearLayout>

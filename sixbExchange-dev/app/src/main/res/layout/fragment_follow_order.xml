@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar_with_statusbar"/>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/trans_15px"
+        android:paddingRight="@dimen/trans_15px"
+        android:background="@color/base_mask_less">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/trans_15px"/>
+
+            <com.fivefivelike.mybaselibrary.view.ShadowLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/trans_15px"
+                android:layout_marginRight="@dimen/trans_15px"
+                android:clipChildren="false"
+                app:sl_cornerRadius="@dimen/trans_10px"
+                app:sl_dx="@dimen/trans_5px"
+                app:sl_dy="@dimen/trans_5px"
+                app:sl_shadowColor="@color/base_mask_less"
+                app:sl_shadowRadius="@dimen/trans_10px"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_white_radiu_t5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/trans_30px"
+                        android:paddingTop="@dimen/trans_30px">
+
+                        <TextView
+                            android:id="@+id/tv_progress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/trans_50px"
+                            android:layout_marginRight="@dimen/trans_50px"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/color_font3"
+                            android:textSize="@dimen/text_trans_24px"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/trans_15px"
+                            android:layout_marginRight="@dimen/trans_40px"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_mask_maxradiu"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:id="@+id/view_start"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/color_25A73F"/>
+
+                            <View
+                                android:id="@+id/view_end"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <com.fivefivelike.mybaselibrary.view.DashView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/trans_2px"
+                        android:layout_marginLeft="@dimen/trans_40px"
+                        android:layout_marginRight="@dimen/trans_40px"
+                        app:dashOrientation="0"
+                        app:dashWidth="@dimen/trans_3px"
+                        app:lineColor="@color/color_font4"
+                        app:lineHeight="@dimen/trans_1px"
+                        app:lineWidth="@dimen/trans_3px"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/trans_18px"
+                        android:gravity="center_vertical"
+                        android:paddingRight="@dimen/trans_30px"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/trans_50px">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="197"
+                            android:orientation="horizontal">
+
+                            <com.fivefivelike.mybaselibrary.view.IconFontTextview
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/trans_10px"
+                                android:gravity="center"
+                                android:text="@string/ic_dice_one"
+                                android:textColor="@color/color_font3"
+                                android:textSize="@dimen/text_trans_24px"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="最低起投额度"
+                                android:textColor="@color/color_font3"
+                                android:textSize="@dimen/text_trans_24px"/>
+
+                        </LinearLayout>
+
+                        <com.fivefivelike.mybaselibrary.view.FontTextview
+                            android:id="@+id/tv_min"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/color_font1"
+                            android:textSize="@dimen/text_trans_42px"
+                            app:TypeFace="Bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/trans_18px"
+                        android:paddingRight="@dimen/trans_30px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/trans_50px">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="197"
+                            android:orientation="horizontal">
+
+                            <com.fivefivelike.mybaselibrary.view.IconFontTextview
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/trans_10px"
+                                android:gravity="center"
+                                android:text="@string/ic_flip_h"
+                                android:textColor="@color/color_font3"
+                                android:textSize="@dimen/text_trans_24px"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="剩余可投额度"
+                                android:textColor="@color/color_font3"
+                                android:textSize="@dimen/text_trans_24px"/>
+
+                        </LinearLayout>
+
+                        <com.fivefivelike.mybaselibrary.view.FontTextview
+                            android:id="@+id/tv_lass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/color_font1"
+                            android:textSize="@dimen/text_trans_42px"
+                            app:TypeFace="Bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/trans_18px"
+                        android:gravity="center_vertical"
+                        android:paddingRight="@dimen/trans_30px"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/trans_50px">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="197"
+                            android:orientation="horizontal">
+
+                            <com.fivefivelike.mybaselibrary.view.IconFontTextview
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/trans_10px"
+                                android:gravity="center"
+                                android:text="@string/ic_wallet"
+                                android:textColor="@color/color_font3"
+                                android:textSize="@dimen/text_trans_24px"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="6B钱包可用余额"
+                                android:textColor="@color/color_font3"
+                                android:textSize="@dimen/text_trans_24px"/>
+
+                        </LinearLayout>
+
+                        <com.fivefivelike.mybaselibrary.view.FontTextview
+                            android:id="@+id/tv_have"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/color_font1"
+                            android:textSize="@dimen/text_trans_42px"
+                            app:TypeFace="Bold"/>
+
+                    </LinearLayout>
+
+                    <com.fivefivelike.mybaselibrary.view.DashView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/trans_2px"
+                        android:layout_marginBottom="@dimen/trans_30px"
+                        android:layout_marginLeft="@dimen/trans_40px"
+                        android:layout_marginRight="@dimen/trans_40px"
+                        android:layout_marginTop="@dimen/trans_25px"
+                        app:dashOrientation="0"
+                        app:dashWidth="@dimen/trans_3px"
+                        app:lineColor="@color/color_font4"
+                        app:lineHeight="@dimen/trans_1px"
+                        app:lineWidth="@dimen/trans_3px"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/trans_60px"
+                        android:layout_marginLeft="@dimen/trans_50px"
+                        android:layout_marginRight="@dimen/trans_50px"
+                        android:text=""
+                        android:textColor="@color/color_font1"
+                        android:textSize="@dimen/text_trans_22px"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/trans_90px"
+                        android:layout_marginRight="@dimen/trans_90px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/iv_reduce"
+                            android:layout_width="@dimen/trans_100px"
+                            android:layout_height="@dimen/trans_100px"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_reduce"
+                            />
+
+                        <EditText
+                            android:id="@+id/tv_num"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="@dimen/trans_70px"
+                            android:layout_marginLeft="@dimen/trans_25px"
+                            android:layout_marginRight="@dimen/trans_25px"
+                            android:background="@color/base_mask"
+                            android:gravity="center"
+                            android:text="1"
+                            android:inputType="number"
+                            android:digits="0123456789"
+                            android:textColor="@color/color_font1"
+                            android:textSize="@dimen/text_trans_48px"/>
+
+                        <ImageView
+                            android:id="@+id/iv_add"
+                            android:layout_width="@dimen/trans_100px"
+                            android:layout_height="@dimen/trans_100px"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_add"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/trans_30px"
+                            android:text="份"
+                            android:textColor="@color/color_font3"
+                            android:textSize="@dimen/text_trans_30px"/>
+
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/trans_15px"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/trans_100px"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_follow_bg"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_follow_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/trans_12px"
+                            android:paddingLeft="@dimen/trans_25px"
+                            android:text=""
+                            android:textColor="@color/mark_color"
+                            android:textSize="@dimen/text_trans_28px"/>
+
+                    </FrameLayout>
+
+                    <com.fivefivelike.mybaselibrary.view.DashView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/trans_2px"
+                        android:layout_marginBottom="@dimen/trans_25px"
+                        android:layout_marginLeft="@dimen/trans_40px"
+                        android:layout_marginRight="@dimen/trans_40px"
+                        android:layout_marginTop="@dimen/trans_40px"
+                        app:dashOrientation="0"
+                        app:dashWidth="@dimen/trans_3px"
+                        app:lineColor="@color/color_font4"
+                        app:lineHeight="@dimen/trans_1px"
+                        app:lineWidth="@dimen/trans_3px"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/trans_60px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/iv_check"
+                            android:layout_width="@dimen/trans_30px"
+                            android:layout_height="@dimen/trans_30px"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_check"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/trans_18px"
+                            android:layout_marginRight="@dimen/trans_10px"
+                            android:gravity="center"
+                            android:text="同意"
+                            android:textColor="@color/color_font3"
+                            android:textSize="@dimen/text_trans_28px"/>
+
+                        <TextView
+                            android:id="@+id/tv_protocol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="《6b.top 跟单协议》"
+                            android:textColor="@color/mark_color"
+                            android:textSize="@dimen/text_trans_28px"/>
+
+
+                    </LinearLayout>
+
+
+                    <com.fivefivelike.mybaselibrary.view.RoundButton
+                        android:id="@+id/tv_commit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/trans_90px"
+                        android:layout_marginRight="@dimen/trans_90px"
+                        android:layout_marginTop="@dimen/trans_40px"
+                        android:gravity="center"
+                        android:padding="@dimen/trans_20px"
+                        android:text="确认无误 立即下单"
+                        android:textColor="@color/color_Primary"
+                        android:textSize="@dimen/text_trans_34px"
+                        app:btnCornerRadius="@dimen/trans_499px"
+                        app:btnSolidColor="@color/color_FA8C16"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_subtract_wallet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/trans_30px"
+                        android:text="下单后系统将从您的6B钱包扣除 0.9 BTC"
+                        android:textColor="@color/color_font3"
+                        android:textSize="@dimen/text_trans_24px"/>
+
+                </LinearLayout>
+
+            </com.fivefivelike.mybaselibrary.view.ShadowLayout>
+
+
+            <TextView
+                android:id="@+id/tv_toast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/trans_100px"
+                android:layout_marginLeft="@dimen/trans_45px"
+                android:layout_marginRight="@dimen/trans_45px"
+                android:layout_marginTop="@dimen/trans_30px"
+                android:gravity="center"
+                android:text="实盘收益率不代表未来收益，实际收益根据项目运作情况而定。此外，平台已提及的风险提示不能穷尽全部风险及市场的全部情形。"
+                android:textColor="@color/color_font3"
+                android:textSize="@dimen/text_trans_22px"/>
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

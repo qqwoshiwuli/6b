@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tl="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+    >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+
+
+
+            <com.fivefivelike.mybaselibrary.view.JudgeNestedScrollView
+                android:id="@+id/judgeNestedScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_Primary"
+                android:layout_marginTop="@dimen/trans_90px"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/trans_280px"
+                        android:background="@color/mark_color"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="@dimen/trans_20px"
+                            android:layout_marginRight="@dimen/trans_20px"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/sixblogo"
+                            />
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingTop="@dimen/trans_40px">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:paddingLeft="@dimen/trans_40px"
+                                        android:text="资产总计"
+                                        android:textColor="@color/font_color"
+                                        android:textSize="@dimen/text_trans_32px"/>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="bottom"
+                                        android:orientation="horizontal"
+                                        android:paddingLeft="@dimen/trans_40px">
+
+                                        <TextView
+                                            android:id="@+id/tv_total_assets"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="--"
+                                            android:textColor="@color/color_Primary"
+                                            android:textSize="@dimen/text_trans_38px"/>
+
+
+                                        <TextView
+                                            android:id="@+id/tv_total_assets_unit"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="USDT"
+                                            android:textColor="@color/font_color"
+                                            android:textSize="@dimen/text_trans_28px"/>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="@dimen/trans_1px"
+                                    android:layout_height="@dimen/trans_90px"
+                                    android:background="@color/base_mask"/>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:visibility="gone"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:paddingLeft="@dimen/trans_40px"
+                                        android:text="可用资产"
+                                        android:textColor="@color/font_color"
+                                        android:textSize="@dimen/text_trans_32px"/>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="bottom"
+                                        android:orientation="horizontal"
+                                        android:paddingLeft="@dimen/trans_40px">
+
+                                        <TextView
+                                            android:id="@+id/tv_available_assets"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="--"
+                                            android:textColor="@color/color_Primary"
+                                            android:textSize="@dimen/text_trans_38px"/>
+
+
+                                        <TextView
+                                            android:id="@+id/tv_available_assets_unit"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="USDT"
+                                            android:textColor="@color/font_color"
+                                            android:textSize="@dimen/text_trans_28px"/>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recycler_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/trans_50px"
+                                android:layout_marginTop="@dimen/trans_50px"
+                                android:clipChildren="false"
+                                />
+
+
+                        </LinearLayout>
+
+                        <com.tablayout.SlidingTabLayout
+                            android:id="@+id/tl_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/trans_79px"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/trans_20px"
+                            app:tl_tab_padding="@dimen/trans_20px"
+                            tl:tl_indicator_color="@color/mark_color"
+                            tl:tl_indicator_height="@dimen/trans_5px"
+                            tl:tl_indicator_width="@dimen/trans_32px"
+                            tl:tl_textSelectColor="@color/mark_color"
+                            tl:tl_textUnselectColor="@color/color_font1"
+                            tl:tl_textsize="@dimen/text_trans_32px"
+                            tl:tl_underline_color="#1A000000"
+                            tl:tl_underline_height="0dp"
+                            />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/trans_1px"
+                                android:background="@color/base_mask"
+                                />
+
+                            <android.support.v4.view.ViewPager
+                                android:id="@+id/vp_sliding"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+
+                            </android.support.v4.view.ViewPager>
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </com.fivefivelike.mybaselibrary.view.JudgeNestedScrollView>
+
+        <include layout="@layout/include_toolbar_with_statusbar"/>
+
+    </FrameLayout>
+
+</FrameLayout>

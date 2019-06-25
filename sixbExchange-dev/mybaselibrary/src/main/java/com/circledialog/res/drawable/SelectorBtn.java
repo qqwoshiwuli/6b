@@ -1,0 +1,43 @@
+package com.circledialog.res.drawable;
+
+import android.graphics.Color;
+import android.graphics.drawable.ShapeDrawable;
+import android.graphics.drawable.StateListDrawable;
+
+/**
+ * 按钮的背景，有点击效果
+ * Created by hupei on 2017/3/30.
+ */
+
+public class SelectorBtn extends StateListDrawable {
+
+    public SelectorBtn(int backgroundColor, int leftTopRadius, int rightTopRadius, int rightBottomRadius, int
+            leftBottomRadius) {
+        //按下
+        ShapeDrawable drawablePress = new ShapeDrawable(DrawableHelper.getRoundRectShape(leftTopRadius, rightTopRadius,
+                rightBottomRadius, leftBottomRadius));
+
+        drawablePress.getPaint().setColor(getDarkerColor(backgroundColor));
+
+        //默认
+        ShapeDrawable defaultDrawable = new ShapeDrawable(DrawableHelper.getRoundRectShape(leftTopRadius,
+                rightTopRadius,
+                rightBottomRadius, leftBottomRadius));
+        defaultDrawable.getPaint().setColor(backgroundColor);
+
+        addState(new int[]{android.R.attr.state_pressed}, drawablePress);
+        addState(new int[]{-android.R.attr.state_pressed}, defaultDrawable);
+    }
+
+
+
+
+    public int getDarkerColor(int color){
+        float[] hsv = new float[3];
+        Color.colorToHSV(color, hsv); // convert to hsv
+        // make darker
+        hsv[2] = hsv[2] - 0.1f; // less brightness
+        int darkerColor = Color.HSVToColor(hsv);
+        return  darkerColor ;
+    }
+}

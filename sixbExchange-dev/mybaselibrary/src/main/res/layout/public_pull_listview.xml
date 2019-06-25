@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.fivefivelike.mybaselibrary.view.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.fivefivelike.mvp.ui.view.LoadMoreListView
+            android:id="@+id/pull_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:scrollbars="none"
+            />
+    </com.fivefivelike.mybaselibrary.view.SwipeRefreshLayout>
+
+    <include layout="@layout/merge_layout_no_data"/>
+</FrameLayout>

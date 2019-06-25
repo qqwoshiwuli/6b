@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/trans_60px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/trans_5px"
+                android:paddingTop="@dimen/trans_20px"
+                android:text="账户资产"
+                android:textColor="@color/color_font3"
+                android:textSize="@dimen/text_trans_22px"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <com.fivefivelike.mybaselibrary.view.FontTextview
+                    android:id="@+id/tv_assets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="--"
+                    android:textColor="@color/color_font1"
+                    android:textSize="@dimen/text_trans_40px"
+                    app:TypeFace="Bold"/>
+
+                <com.fivefivelike.mybaselibrary.view.FontTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/trans_10px"
+                    android:text="BTC"
+                    android:textColor="@color/color_font2"
+                    android:textSize="@dimen/text_trans_26px"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/trans_2px"
+            android:layout_height="@dimen/trans_50px"
+            android:layout_marginTop="@dimen/trans_10px"
+            android:background="@color/base_mask"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/trans_60px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/trans_5px"
+                android:paddingTop="@dimen/trans_20px"
+                android:text="可用余额"
+                android:textColor="@color/color_font3"
+                android:textSize="@dimen/text_trans_22px"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <com.fivefivelike.mybaselibrary.view.FontTextview
+                    android:id="@+id/tv_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="--"
+                    android:textColor="@color/color_font1"
+                    android:textSize="@dimen/text_trans_40px"
+                    app:TypeFace="Bold"/>
+
+                <com.fivefivelike.mybaselibrary.view.FontTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/trans_10px"
+                    android:text="BTC"
+                    android:textColor="@color/color_font2"
+                    android:textSize="@dimen/text_trans_26px"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trans_20px"
+        android:layout_marginTop="@dimen/trans_20px"
+        android:background="@color/base_mask"/>
+
+</LinearLayout>

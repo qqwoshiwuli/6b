@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/trans_85px">
+    <TextView
+        android:paddingLeft="@dimen/trans_24px"
+        android:id="@+id/tv_coinright"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="交易币种"
+        android:textColor="@color/color_font1"
+        android:textSize="@dimen/trans_38px"/>
+    <View
+        android:background="#E1E3E7"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trans_2px"/>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_Primary"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textColor="@color/choose_dialog_content_color"
+            android:textSize="16dp"
+            />
+
+        <TextView
+            android:id="@+id/commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="确定"
+            android:textColor="@color/choose_dialog_content_color"
+            android:textSize="16dp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <com.wheelview.Wheel3DView
+            android:id="@+id/wheel_province"
+            android:layout_width="0dp"
+            app:toward="left"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:openVoice="true"
+            ></com.wheelview.Wheel3DView>
+
+        <com.wheelview.Wheel3DView
+            android:id="@+id/wheel_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:openVoice="true"
+            ></com.wheelview.Wheel3DView>
+
+        <com.wheelview.Wheel3DView
+            android:id="@+id/wheel_area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:openVoice="true"
+            app:toward="right"
+            ></com.wheelview.Wheel3DView>
+    </LinearLayout>
+</LinearLayout>

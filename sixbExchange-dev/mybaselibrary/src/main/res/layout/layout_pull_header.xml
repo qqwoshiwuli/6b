@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <com.fivefivelike.mybaselibrary.view.IconFontTextview
+        android:id="@+id/tv_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/trans_5px"
+        android:text="@string/ic_shuaxin"
+        android:textColor="@color/color_font3"
+        android:textSize="@dimen/text_trans_24px"/>
+
+    <com.fivefivelike.mybaselibrary.view.IconFontTextview
+        android:id="@+id/tv_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/trans_5px"
+        android:text="@string/ic_jinggao"
+        android:textColor="@color/color_font3"
+        android:textSize="@dimen/text_trans_24px"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/trans_15px"
+        android:paddingTop="@dimen/trans_15px"
+        android:text="@string/str_refushing"
+        android:textColor="@color/color_font3"
+        android:textSize="@dimen/text_trans_24px"/>
+
+</LinearLayout>

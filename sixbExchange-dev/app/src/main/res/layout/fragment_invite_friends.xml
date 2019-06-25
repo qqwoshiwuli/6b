@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar_with_statusbar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/iv_invite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/trans_40px">
+
+                <View
+                    android:layout_width="@dimen/trans_5px"
+                    android:layout_height="@dimen/trans_40px"
+                    android:layout_marginRight="@dimen/trans_10px"
+                    android:background="@color/mark_color"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="我的邀请码"
+                    android:textColor="@color/color_font1"
+                    android:textSize="@dimen/text_trans_30px"/>
+
+                <TextView
+                    android:id="@+id/tv_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/trans_30px"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:text="补填邀请码"
+                    android:textColor="@color/mark_color"
+                    android:textSize="@dimen/text_trans_30px"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/trans_35px"
+                android:layout_marginRight="@dimen/trans_35px"
+                android:background="@drawable/shape_mask_radiu_t10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/trans_20px"
+                android:paddingTop="@dimen/trans_20px">
+
+                <TextView
+                    android:id="@+id/tv_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/color_font1"
+                    android:textSize="@dimen/text_trans_40px"/>
+
+
+                <com.fivefivelike.mybaselibrary.view.RoundButton
+                    android:id="@+id/tv_Copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/trans_30px"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/trans_10px"
+                    android:paddingLeft="@dimen/trans_25px"
+                    android:paddingRight="@dimen/trans_20px"
+                    android:paddingTop="@dimen/trans_10px"
+                    android:text="复制邀请码"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_trans_26px"
+                    app:btnCornerRadius="@dimen/trans_499px"
+                    app:btnSolidColor="@color/mark_color"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_input_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/trans_45px"
+                android:gravity="center"
+                android:paddingBottom="@dimen/trans_30px"
+                android:paddingTop="@dimen/trans_30px"
+                android:textColor="@color/mark_color"
+                android:textSize="@dimen/text_trans_28px"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/trans_40px"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.7"
+                    >
+
+                    <include layout="@layout/layout_share_friend"/>
+
+                </FrameLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/trans_40px">
+
+                <View
+                    android:layout_width="@dimen/trans_5px"
+                    android:layout_height="@dimen/trans_40px"
+                    android:layout_marginRight="@dimen/trans_10px"
+                    android:background="@color/mark_color"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="活动规则"
+                    android:textColor="@color/color_font1"
+                    android:textSize="@dimen/text_trans_30px"/>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_activity_rules"
+                android:layout_marginTop="@dimen/text_trans_30px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/trans_50px"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                />
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_switch"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_FA8C16"
+            android:gravity="center"
+            android:padding="@dimen/trans_25px"
+            android:text="换张海报"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_trans_32px"/>
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mark_color"
+            android:gravity="center"
+            android:padding="@dimen/trans_25px"
+            android:text="分享"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_trans_32px"/>
+    </LinearLayout>
+
+</LinearLayout>

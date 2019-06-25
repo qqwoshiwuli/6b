@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tl="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <include layout="@layout/include_toolbar_with_statusbar"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/lin_exch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/select_default_click"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_exch"
+                    android:layout_width="@dimen/trans_30px"
+                    android:layout_height="@dimen/trans_30px"
+                    android:layout_marginLeft="@dimen/trans_40px"
+                    android:layout_marginRight="@dimen/trans_10px"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="OKEX BTC季度合约"
+                    android:textColor="@color/color_font1"
+                    android:textSize="@dimen/text_trans_30px"/>
+
+                <com.fivefivelike.mybaselibrary.view.IconFontTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/trans_15px"
+                    android:text="@string/ic_Down"
+                    android:textColor="@color/color_font2"
+                    android:textSize="@dimen/text_trans_30px"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <com.fivefivelike.mybaselibrary.view.IconFontTextview
+                android:id="@+id/tv_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingRight="@dimen/trans_35px"
+                android:text=""
+                android:textColor="@color/color_font1"
+                android:textSize="@dimen/text_trans_30px"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/trans_0px"
+        android:orientation="vertical">
+
+        <com.tablayout.CommonTabLayout
+            android:id="@+id/tl_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/trans_90px"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            tl:tl_indicator_color="@color/mark_color"
+            tl:tl_indicator_height="@dimen/trans_2px"
+            tl:tl_indicator_width_equal_title="true"
+            tl:tl_tab_space_equal="true"
+            tl:tl_textSelectColor="@color/mark_color"
+            tl:tl_textUnselectColor="@color/color_font2"
+            tl:tl_textsize="@dimen/text_trans_32px"
+            tl:tl_underline_color="#1A000000"
+            tl:tl_underline_height="0dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/trans_1px"
+            android:background="@color/base_mask"/>
+    </LinearLayout>
+
+    <com.circledialog.view.NoSlideViewPager
+        android:id="@+id/vp_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+    </com.circledialog.view.NoSlideViewPager>
+
+</LinearLayout>

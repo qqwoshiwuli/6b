@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tl="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/color_Primary"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/trans_0px"
+        android:orientation="vertical">
+
+        <com.tablayout.CommonTabLayout
+            android:id="@+id/tl_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/trans_90px"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            tl:tl_indicator_color="@color/mark_color"
+            tl:tl_indicator_height="@dimen/trans_2px"
+            tl:tl_indicator_width="@dimen/trans_100px"
+            tl:tl_textSelectColor="@color/mark_color"
+            tl:tl_textUnselectColor="@color/color_font2"
+            tl:tl_textsize="@dimen/text_trans_32px"
+            tl:tl_underline_color="#1A000000"
+            tl:tl_underline_height="0dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/trans_1px"
+            android:background="@color/base_mask"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trans_90px"
+        android:layout_marginLeft="@dimen/trans_30px"
+        android:layout_marginRight="@dimen/trans_30px"
+        android:layout_marginTop="@dimen/trans_50px"
+        android:background="@drawable/shape_gray_border"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/trans_30px"
+            android:gravity="center"
+            android:paddingLeft="@dimen/trans_25px"
+            android:text="USD"
+            android:textColor="@color/color_font3"
+            android:textSize="@dimen/text_trans_34px"/>
+
+        <EditText
+            android:id="@+id/et_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|right"
+            android:hint="数量"
+            android:inputType="numberDecimal"
+            android:paddingLeft="@dimen/trans_25px"
+            android:paddingRight="@dimen/trans_30px"
+            android:text=""
+            android:textColor="@color/color_font1"
+            android:textColorHint="@color/color_font4"
+            android:textSize="@dimen/text_trans_34px"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/trans_25px"
+        android:paddingLeft="@dimen/trans_50px"
+        android:paddingTop="@dimen/trans_10px"
+        android:text=""
+        android:textColor="@color/increasing_color"
+        android:textSize="@dimen/text_trans_20px"/>
+
+
+    <com.fivefivelike.mybaselibrary.view.RoundButton
+        android:id="@+id/tv_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/trans_40px"
+        android:layout_marginLeft="@dimen/trans_50px"
+        android:layout_marginRight="@dimen/trans_50px"
+        android:gravity="center"
+        android:padding="@dimen/trans_10px"
+        android:text=""
+        android:textColor="@color/color_Primary"
+        android:textSize="@dimen/text_trans_36px"
+        app:btnCornerRadius="@dimen/trans_499px"
+        app:btnSolidColor="@color/color_6BB578"/>
+
+</LinearLayout>

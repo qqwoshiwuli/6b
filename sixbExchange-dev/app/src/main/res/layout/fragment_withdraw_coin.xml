@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar_with_statusbar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/trans_300px">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trans_20px"
+                android:background="@color/base_mask"/>
+
+
+            <LinearLayout
+                android:id="@+id/lin_select_coin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_default_click"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/trans_30px"
+                    android:text="选择币种"
+                    android:textColor="@color/color_font1"
+                    android:textSize="@dimen/text_trans_34px"/>
+
+                <TextView
+                    android:id="@+id/tv_select_coins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="--"
+                    android:textColor="@color/color_font1"
+                    android:textSize="@dimen/text_trans_32px"/>
+
+                <com.fivefivelike.mybaselibrary.view.IconFontTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/trans_30px"
+                    android:text="@string/ic_Next"
+                    android:textColor="@color/color_font3"
+                    android:textSize="@dimen/text_trans_32px"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trans_20px"
+                android:background="@color/base_mask"/>
+
+            <TextView
+                android:id="@+id/tv_set_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/trans_50px"
+                android:paddingBottom="@dimen/trans_30px"
+                android:paddingTop="@dimen/trans_30px"
+                android:text="提币地址管理"
+                android:textColor="@color/mark_color"
+                android:textSize="@dimen/text_trans_24px"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/trans_50px"
+                android:paddingRight="@dimen/trans_50px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="提币地址："
+                    android:textColor="@color/color_font1"
+                    android:textSize="@dimen/text_trans_28px"/>
+
+                <LinearLayout
+                    android:id="@+id/lin_select_addr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/trans_10px"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_gray_border_r5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_addr_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:hint="转出地址"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/trans_10px"
+                        android:paddingLeft="@dimen/trans_25px"
+                        android:paddingRight="@dimen/trans_25px"
+                        android:paddingTop="@dimen/trans_10px"
+                        android:text=""
+                        android:textColor="@color/color_font2"
+                        android:textColorHint="@color/color_font3"
+                        android:textSize="@dimen/text_trans_28px"/>
+
+                    <com.fivefivelike.mybaselibrary.view.IconFontTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/trans_25px"
+                        android:paddingRight="@dimen/trans_25px"
+                        android:text="@string/ic_Down"
+                        android:textColor="@color/color_font3"
+                        android:textSize="@dimen/text_trans_28px"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/trans_50px"
+                android:paddingBottom="@dimen/trans_20px"
+                android:paddingTop="@dimen/trans_20px"
+                android:textColor="@color/color_font1"
+                android:textSize="@dimen/text_trans_24px"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/trans_50px"
+                android:paddingRight="@dimen/trans_50px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="提币数量："
+                    android:textColor="@color/color_font1"
+                    android:textSize="@dimen/text_trans_28px"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/trans_10px"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_gray_border_r5"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/tv_num"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="最小单位0.01"
+                        android:inputType="numberDecimal"
+                        android:paddingBottom="@dimen/trans_10px"
+                        android:paddingLeft="@dimen/trans_25px"
+                        android:paddingRight="@dimen/trans_25px"
+                        android:paddingTop="@dimen/trans_10px"
+                        android:text=""
+                        android:textColor="@color/color_font2"
+                        android:textColorHint="@color/color_font3"
+                        android:textSize="@dimen/text_trans_28px"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/trans_40px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/trans_50px"
+                android:paddingRight="@dimen/trans_50px"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="资金密码："
+                    android:textColor="@color/color_font1"
+                    android:textSize="@dimen/text_trans_28px"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/trans_10px"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_gray_border_r5"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/tv_pw"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="请输入资金密码"
+                        android:inputType="numberPassword"
+                        android:paddingBottom="@dimen/trans_10px"
+                        android:paddingLeft="@dimen/trans_25px"
+                        android:paddingRight="@dimen/trans_25px"
+                        android:paddingTop="@dimen/trans_10px"
+                        android:text=""
+                        android:textColor="@color/color_font2"
+                        android:textColorHint="@color/color_font3"
+                        android:textSize="@dimen/text_trans_28px"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/trans_40px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/trans_50px"
+                android:paddingRight="@dimen/trans_50px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="短信验证："
+                    android:textColor="@color/color_font1"
+                    android:textSize="@dimen/text_trans_28px"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/trans_10px"
+                    android:layout_marginRight="@dimen/trans_50px"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_gray_border_r5"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/tv_code"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="请输入短信验证码"
+                        android:inputType="numberDecimal"
+                        android:paddingBottom="@dimen/trans_10px"
+                        android:paddingLeft="@dimen/trans_25px"
+                        android:paddingRight="@dimen/trans_25px"
+                        android:paddingTop="@dimen/trans_10px"
+                        android:text=""
+                        android:textColor="@color/color_font2"
+                        android:textColorHint="@color/color_font3"
+                        android:textSize="@dimen/text_trans_28px"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_get_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_gray_border_r5"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/trans_10px"
+                    android:paddingLeft="@dimen/trans_25px"
+                    android:paddingRight="@dimen/trans_25px"
+                    android:paddingTop="@dimen/trans_10px"
+                    android:text="获取验证码"
+                    android:textColor="@color/color_font1"
+                    android:textSize="@dimen/text_trans_28px"/>
+
+            </LinearLayout>
+
+            <com.fivefivelike.mybaselibrary.view.RoundButton
+                android:id="@+id/tv_commit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/trans_50px"
+                android:layout_marginRight="@dimen/trans_50px"
+                android:layout_marginTop="@dimen/trans_80px"
+                android:gravity="center"
+                android:padding="@dimen/trans_25px"
+                android:text="确定提现"
+                android:textColor="@color/color_Primary"
+                android:textSize="@dimen/text_trans_36px"
+                app:btnCornerRadius="@dimen/trans_5px"
+                app:btnSolidColor="@color/mark_color"/>
+
+
+            <com.fivefivelike.mybaselibrary.view.FontTextview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/trans_25px"
+                android:layout_marginLeft="@dimen/trans_50px"
+                android:layout_marginTop="@dimen/trans_90px"
+                android:gravity="center"
+                android:text="说明"
+                android:textColor="@color/color_font3"
+                android:textSize="@dimen/text_trans_32px"
+                app:TypeFace="Bold"/>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/trans_50px"
+                android:layout_marginRight="@dimen/trans_50px"
+                android:lineSpacingExtra="@dimen/trans_20px"
+                android:text=""
+                android:textColor="@color/color_font3"
+                android:textSize="@dimen/text_trans_26px"/>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

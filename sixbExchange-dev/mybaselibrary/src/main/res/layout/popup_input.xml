@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:orientation="vertical">
+
+    <com.fivefivelike.mybaselibrary.view.PopupBackView
+        android:layout_width="@dimen/trans_200px"
+        android:layout_height="@dimen/trans_300px"
+        app:backageColor="@color/red"
+        app:arrow_gravity="left"
+        app:arrow_margin_left="@dimen/trans_20px"
+        app:roundConner="@dimen/trans_20px"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+</FrameLayout>

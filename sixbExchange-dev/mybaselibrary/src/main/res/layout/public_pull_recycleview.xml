@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin.support.widget.SkinCompatLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_pull"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <com.fivefivelike.mybaselibrary.view.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_rcv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_Primary"
+                android:clipChildren="false">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/pull_recycleview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipChildren="false"
+                    android:scrollbars="vertical"
+                    />
+
+            </FrameLayout>
+
+        </com.fivefivelike.mybaselibrary.view.SwipeRefreshLayout>
+
+
+        <FrameLayout
+            android:id="@+id/fl_top"
+            android:layout_width="@dimen/trans_90px"
+            android:layout_height="@dimen/trans_90px"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="@dimen/trans_40px"
+            >
+
+            <com.fivefivelike.mybaselibrary.view.RoundButton
+                android:layout_width="@dimen/trans_90px"
+                android:layout_height="@dimen/trans_90px"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/trans_15px"
+                android:rotation="180"
+                android:textColor="@color/color_Primary"
+                android:textSize="@dimen/text_trans_45px"
+                android:textStyle="bold"
+                app:btnCornerRadius="@dimen/trans_499px"
+                app:btnSolidColor="@color/color_font4"
+                />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/trans_45px"
+                android:layout_height="@dimen/trans_45px"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/trans_5px"
+                app:srcCompat="@drawable/ic_top"
+                />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <!--<include layout="@layout/merge_layout_no_data"/>-->
+</skin.support.widget.SkinCompatLinearLayout>

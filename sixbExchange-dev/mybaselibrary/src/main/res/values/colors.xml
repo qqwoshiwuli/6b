@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--通用资源-->
+    <color name="colorAccent">#4A61F6</color> <!--@color/color_font1-->
+
+    <color name="transparent_50">#77000000</color>
+    <color name="transparent_80">#cc000000</color>
+    <color name="white_transparent_20">#ccffffff</color>
+    <color name="black_transparent_20">#cc000000</color>
+    <color name="black_transparent_99">#99000000</color>
+    <color name="color_light_white">#eaebf0</color>
+    <color name="trans_333333">#333333</color>
+    <color name="font_grey">#999999</color>
+
+    <!--纯色-->
+    <color name="black">#000000</color>
+    <color name="blue">#0000ff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="grey">#dddddd</color>
+    <color name="glod">#f3ae2e</color>
+    <color name="redb">#BE3E3D</color>
+
+    <color name="color_333333">#333333</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_e5e5e5">#e5e5e5</color>
+    <color name="color_f5f5f5">#f5f5f5</color>
+    <color name="color_dddddd">#dddddd</color>
+
+    <color name="color_666666">#666666</color>
+    <color name="color_555555">#555555</color>
+    <color name="color_6A7180">#6A7180</color>
+    <color name="color_707070">#707070</color>
+    <color name="color_f45638">#f45638</color>
+    <color name="color_FA8C16">#FA8C16</color>
+    <color name="color_ff5663">#FF5663</color>
+    <color name="color_f23f1d">#f23f1d</color>
+    <color name="color_EC4D5A">#EC4D5A</color>
+    <color name="color_E7625D">#E7625D</color>
+    <color name="color_1b1b1b">#1b1b1b</color>
+    <color name="color_959595">#959595</color>
+    <color name="color_c9c9c9">#c9c9c9</color>
+    <color name="color_e4e4e4">#e4e4e4</color>
+    <color name="color_d6d6d6">#d6d6d6</color>
+    <color name="color_dcdcdc">#dcdcdc</color>
+    <color name="color_8c8c8c">#8c8c8c</color>
+    <color name="color_8a8a8a">#8a8a8a</color>
+    <color name="color_313131">#313131</color>
+    <color name="color_a0a0a0">#a0a0a0</color>
+    <color name="color_040404">#040404</color>
+    <color name="color_b6b6b6">#b6b6b6</color>
+    <color name="color_d0d0d0">#d0d0d0</color>
+    <color name="color_d9d9d9">#d9d9d9</color>
+    <color name="color_3a3a3a">#3a3a3a</color>
+    <color name="color_d2b567">#d2b567</color>
+    <color name="color_44c745">#44c745</color>
+    <color name="color_f2f2f2">#f2f2f2</color>
+    <color name="color_6c6c6c">#6c6c6c</color>
+    <color name="color_21282C">#21282C</color>
+    <color name="color_fafafa">#fafafa</color>
+    <color name="color_24CE91">#24CE91</color>
+    <color name="color_25A73F">#25a93f</color>
+    <color name="color_6BB578">#6BB578</color>
+    <color name="color_F6F7F9">#F6F7F9</color>
+    <color name="color_F5A623">#F5A623</color>
+    <color name="color_F8E71C">#F8E71C</color>
+    <color name="color_ef4bc1">#ef4bc1</color>
+    <color name="color_dbdef1">#DBDEF1</color>
+    <color name="color_745015">#745015</color>
+    <color name="color_FBC121">#FBC121</color>
+    <color name="color_F4CB59">#F4CB59</color>
+    <color name="color_535353">#535353</color>
+    <color name="color_EBE8DF">#EBE8DF</color>
+    <color name="color_108EE9">#108EE9</color>
+    <color name="color_F7FCFF">#F7FCFF</color>
+
+    <color name="color_blue">#2babff</color>
+    <color name="color_blue_more">#198cf1</color>
+    <color name="color_blue_dark">#0074f6</color>
+    <color name="color_blue_dark_more">#0163d1</color>
+
+    <color name="color_purple">#782184</color>
+    <color name="color_purple_more">#56237c</color>
+    <color name="color_purple_dark">#2e266f</color>
+
+
+    <color name="increasing_color">#EC4D5A</color>
+    <color name="increasing_color_dark">#d75e32</color>
+    <color name="decreasing_color">#53B865</color>
+    <color name="decreasing_color_dark">#289c69</color>
+
+
+    <color name="black_transparent_10">#0a000000</color>
+    <color name="black_transparent_25">#19000000</color>
+    <color name="black_transparent_50">#32000000</color>
+    <color name="black_transparent_100">#64000000</color>
+    <color name="black_transparent_150">#96000000</color>
+    <color name="white_transparent_10">#0affffff</color>
+    <color name="white_transparent_25">#19ffffff</color>
+    <color name="white_transparent_50">#32ffffff</color>
+    <color name="white_transparent_100">#64ffffff</color>
+    <color name="white_transparent_150">#96ffffff</color>
+    <color name="kBg_dark">#1E1E35</color>
+    <color name="kBg_light">#ffffff</color>
+
+    <!--皮肤包颜色-->
+
+    <color name="big_price_color">#555c7d</color>
+    <color name="little_price_color">#95a2c7</color>
+
+    <!--95A2C7-->
+    <color name="color_232323">#232323</color>
+    <color name="color_8290AF">#8290AF</color>
+
+
+    <color name="praise_item_default">#333333</color>
+    <color name="praise_item_selector_default">#cccccc</color>
+    <color name="praise_item">#8290AF</color>
+
+
+    <!-- 饼状图颜色 -->
+    <color name="piechart1">#FFA763</color>
+    <color name="piechart2">#1ACF90</color>
+    <color name="piechart3">#FF5663</color>
+    <color name="piechart4">#7CB5EC</color>
+    <color name="piechart5">#8085E9</color>
+    <color name="piechart6">#FDD835</color>
+    <color name="piechart7">#F95F56</color>
+    <color name="piechart8">#35D8C3</color>
+    <color name="piechart9">#9013FE</color>
+    <color name="piechart10">#C93DC9</color>
+    <color name="piechart11">#AAFFFA</color>
+    <color name="piechart12">#4A61F6</color>
+    <color name="piechart13">#7ED321</color>
+    <color name="piechart14">#DBE1F0</color>
+    <color name="piechart15">#79A3FF</color>
+    <color name="piechart16">#FFBD51</color>
+    <color name="piechart17">#9AE746</color>
+    <color name="piechart18">#FF6874</color>
+    <color name="piechart19">#7083FF</color>
+
+
+    <!--预警提醒#F8E68D
+大单订阅提醒#4A61F6
+公告#50E3C2
+价格提醒#9013FE
+大额转账提醒#0094FF
+暴涨暴跌(币价波动)提#F95F56
+大额挂单提醒#09BB07
+大额爆仓单提醒#D0021B
+信函送达通知#8394FF
+知识星球#F5A623
+推特#B8E986
+BOLL#7C44AC
+KDJ#73C5FF
+高低点提醒#0D8359
+其他#FFDA22
+
+（1:预警提醒;2:大单订阅提醒；3:公告；
+    // 4:价格提醒；5:大额转账提醒；6:暴涨暴跌(币价波动)提醒；7:大额挂单提醒；8:大额爆仓单提醒
+    // 10:信函送达通知；11:知识星球；12:推特）
+-->
+    <color name="remind0">#FFB924</color>
+    <color name="remind1">#FFB924</color>
+    <color name="remind2">#4A61F6</color>
+    <color name="remind3">#50E3C2</color>
+    <color name="remind4">#9013FE</color>
+    <color name="remind5">#0094FF</color>
+    <color name="remind6">#F95F56</color>
+    <color name="remind7">#09BB07</color>
+    <color name="remind8">#D0021B</color>
+    <color name="remind9">#FFDA22</color>
+    <color name="remind10">#8394FF</color>
+    <color name="remind11">#F5A623</color>
+    <color name="remind12">#0D8359</color>
+    <color name="remind13">#7C44AC</color>
+    <color name="remind14">#73C5FF</color>
+    <color name="remind15">#FFB924</color>
+    <color name="remind16">#FFDA22</color>
+
+
+    <!--  -->
+    <color name="new_green">#e2fdfa</color>
+    <color name="feature">#fceee8</color>
+
+    <color name="color_mark_more">#4259ec</color>
+    <color name="color_mark_less">#E4E8FF</color>
+    <color name="color_mark_dark">#3d53e2</color>
+    <color name="color_mark_dark_more">#0123ff</color>
+
+    <color name="mark_color">#2F54EB</color>
+
+    <color name="font_color">#A1AED1</color>
+    <color name="navigation_color">#208DE3</color>
+    <color name="welcome_color">#5F95FD</color>
+
+    <color name="color_Primary">#ffffff</color>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+
+    <color name="base_mask">#0a000000</color>
+    <color name="base_mask_more">#0f000000</color>
+    <color name="base_mask_less">#08000000</color>
+    <color name="base_bg">#f9f9ff</color>
+    <color name="base_mask_dark">#0affffff</color>
+    <color name="base_mask_dark_dark">#26ffffff</color>
+
+    <color name="color_font1">#333333</color>
+    <color name="color_font2">#6A7180</color>
+    <color name="color_font3">#999999</color>
+    <color name="color_font4">#cccccc</color>
+    <color name="color_font5">#C8D1FF</color>
+    <color name="color_font1_dark">#FFFFFF</color><!--@color/white-->
+    <color name="color_font2_dark">#cccccc</color><!--@color/color_cccccc-->
+    <color name="color_font3_dark">#999999</color><!--@color/color_999999-->
+    <color name="color_font4_dark">#6A7180</color><!--@color/color_6A7180-->
+
+    <!-- chart -->
+    <color name="marker_bg">#1C232E</color>
+    <color name="marker_line_bg">#000000</color>
+    <color name="marker_text_bg">#000000</color>
+    <color name="border_color">#A7ADBC</color>
+    <color name="mine_label_txt">#A7ADBC</color>
+    <color name="minute_jizhun">#7F9976</color>
+    <color name="minute_blue">#00D0FC</color>
+    <color name="minute_yellow">#E7B448</color>
+
+    <color name="ma5">#FFC17AFF</color>
+    <color name="ma7">#24CE91</color>
+    <color name="ma10">#FFA763</color>
+    <color name="ma20">#2671FE</color>
+    <color name="ma30">#FFA209</color>
+
+    <color name="tag_bg1">#FC5473</color>
+    <color name="tag_bg2">#1dcc8b</color>
+    <color name="tag_bg3">#475ded</color>
+    <color name="tag_bg4">#f95f56</color>
+    <color name="tag_bg5">#4abcf6</color>
+    <color name="tag_bg6">#50c42a</color>
+    <color name="tag_bg7">#f5a623</color>
+
+
+    <color name="minute_grayLine">#2D3945</color>
+    <color name="minute_black">#101419</color>
+    <color name="minute_zhoutv">#858D93</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="toolbar_text_color">#000000</color>
+    <color name="basic_wheelview_color">#333333</color>
+    <color name="basic_line">#e5e5e5</color>
+    <color name="color_base_fm">#1D1A1C</color>
+    <color name="choose_dialog_content_color">@color/trans_333333</color>
+
+
+    <!--顶部导航栏背景颜色-->
+    <color name="toolbar_bg">#ffffff</color>
+    <color name="status_bg">#ffffff</color>
+    <color name="area_bg">#fafcfe</color>
+    <color name="tab_unselect">#c9c9c9</color>
+    <color name="bg_btn">#dadada</color>
+
+</resources>

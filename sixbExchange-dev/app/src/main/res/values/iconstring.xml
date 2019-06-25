@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string name="ic_Back">&#xe643;</string>-->
+    <!--<string name="ic_shuaxin">&#xe66d;</string>-->
+    <!--<string name="ic_jinggao">&#xe620;</string>-->
+
+
+    <string name="ic_Down">&#xe64d;</string>
+    <string name="ic_Next">&#xe652;</string>
+    <string name="ic_Info2">&#xe620;</string>
+    <string name="ic_Info"> </string>
+    <string name="ic_file_search">&#xe8a6;</string>
+    <string name="ic_envelope">&#xe871;</string>
+    <string name="ic_6btop">&#xe77d;</string>
+    <string name="ic_6blogo">&#xe77c;</string>
+    <string name="ic_6btopex">&#xe77f;</string>
+    <string name="ic_exchange_alt">&#xe87b;</string>
+    <string name="ic_question_circle">&#xe9d4;</string>
+    <string name="ic_paixu2">&#xe780;</string>
+    <string name="ic_paixu1">&#xe781;</string>
+    <string name="ic_paixu3">&#xe782;</string>
+    <string name="ic_headphones_alt">&#xe733;</string>
+    <string name="ic_check">&#xe600;</string>
+    <string name="ic_user_square">&#xe6d5;</string>
+    <string name="ic_exclamation_octa">&#xe725;</string>
+    <string name="ic_postcard">&#xe74f;</string>
+    <string name="ic_book_medical">&#xe749;</string>
+    <string name="ic_flip_h">&#xe8b7;</string>
+    <string name="ic_wallet">&#xeaa9;</string>
+    <string name="ic_adjust_circle">&#xe6dd;</string>
+    <string name="ic_dice_one">&#xe83a;</string>
+    <string name="ic_erweima">&#xe640;</string>
+    <string name="ic_Dots1">&#xe648;</string>
+    <string name="ic_seting">&#xe63b;</string>
+    <string name="ic_seting1">&#xe63a;</string>
+    <string name="ic_fenxiang">&#xe60d;</string>
+
+
+</resources>

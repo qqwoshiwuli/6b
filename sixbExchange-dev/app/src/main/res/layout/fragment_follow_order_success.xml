@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar_with_statusbar"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/trans_70px"
+        android:layout_marginLeft="@dimen/trans_170px"
+        android:layout_marginRight="@dimen/trans_170px"
+        android:layout_marginTop="@dimen/trans_110px"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/undraw_confirmation_2uy"
+        />
+
+    <com.fivefivelike.mybaselibrary.view.FontTextview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/trans_40px"
+        android:text="份额确定成功"
+        android:textColor="@color/color_font1"
+        android:textSize="@dimen/text_trans_36px"
+        app:TypeFace="Bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/trans_170px"
+        android:layout_marginRight="@dimen/trans_170px"
+        android:gravity="center"
+        android:text="系统正在处理您的订单，请稍后到持有界面查看"
+        android:textColor="@color/color_font1"
+        android:textSize="@dimen/text_trans_26px"/>
+
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_Primary"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/trans_30px"
+            android:text="分享到"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_trans_30px"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/trans_30px"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+        <View
+            style="@style/line_hor"
+            android:layout_marginLeft="@dimen/trans_20px"
+            android:layout_marginRight="@dimen/trans_20px"
+            android:layout_marginTop="@dimen/trans_50px"/>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/trans_98px"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#a6c0fe"
+            android:textSize="@dimen/text_trans_30px"/>
+    </LinearLayout>
+
+</LinearLayout>

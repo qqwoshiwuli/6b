@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar_with_statusbar" />
+
+    <com.fivefivelike.mybaselibrary.view.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_Primary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="224"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/lin_order_type"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/trans_30px"
+                            android:layout_weight="1"
+                            android:background="@drawable/select_default_click"
+                            android:orientation="horizontal">
+
+                            <com.fivefivelike.mybaselibrary.view.IconFontTextview
+                                android:id="@+id/tv_order_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/select_default_click"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/trans_30px"
+                                android:paddingTop="@dimen/trans_15px"
+                                android:paddingBottom="@dimen/trans_15px"
+                                android:text="--"
+                                android:textColor="@color/color_font1"
+                                android:textSize="@dimen/text_trans_34px" />
+
+
+                            <com.fivefivelike.mybaselibrary.view.IconFontTextview
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="1"
+                                android:paddingLeft="@dimen/trans_5px"
+                                android:paddingBottom="@dimen/trans_15px"
+                                android:text="@string/ic_Down"
+                                android:textColor="@color/color_font1"
+                                android:textSize="@dimen/text_trans_26px" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_to_kline"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="151"
+                        android:background="@drawable/select_default_click"
+                        android:clipChildren="false"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.fivefivelike.mybaselibrary.view.SingleLineZoomTextView
+                            android:id="@+id/tv_now_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/trans_30px"
+                            android:layout_marginRight="@dimen/trans_25px"
+                            android:gravity="center"
+                            android:text="--"
+                            android:textColor="@color/color_font2"
+                            android:textSize="@dimen/text_trans_36px" />
+
+                        <ImageView
+                            android:id="@+id/iv_to_kline"
+                            android:layout_width="@dimen/trans_40px"
+                            android:layout_height="@dimen/trans_40px"
+                            android:layout_marginRight="@dimen/trans_30px"
+                            android:src="@drawable/ic_to_kline" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/trans_15px"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="224"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/trans_30px"
+                        android:paddingRight="@dimen/trans_30px">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/trans_30px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_buy"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/base_mask"
+                                android:gravity="center"
+                                android:padding="@dimen/trans_5px"
+                                android:text="买入"
+                                android:textColor="@color/color_Primary"
+                                android:textSize="@dimen/text_trans_28px" />
+
+                            <TextView
+                                android:id="@+id/tv_sell"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/base_mask"
+                                android:gravity="center"
+                                android:padding="@dimen/trans_5px"
+                                android:text="卖出"
+                                android:textColor="@color/color_Primary"
+                                android:textSize="@dimen/text_trans_28px" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="将以当前价格成交"
+                            android:textColor="@color/color_font1"
+                            android:textSize="@dimen/text_trans_28px" />
+
+                        <com.fivefivelike.mybaselibrary.view.FontTextview
+                            android:id="@+id/tv_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/trans_15px"
+                            android:layout_marginBottom="@dimen/trans_30px"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/color_font1"
+                            android:textSize="@dimen/text_trans_40px"
+                            app:TypeFace="Bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/trans_65px"
+                            android:background="@drawable/shape_mask_border_r5"
+                            android:orientation="horizontal">
+
+                            <com.fivefivelike.mybaselibrary.view.FontTextview
+                                android:layout_width="@dimen/trans_65px"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/mark_color"
+                                android:textSize="@dimen/text_trans_40px"
+                                app:TypeFace="Bold" />
+
+                            <View
+                                android:layout_width="@dimen/trans_1px"
+                                android:layout_height="match_parent"
+                                android:background="@color/base_mask" />
+
+                            <EditText
+                                android:id="@+id/et_num"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/transparent"
+                                android:gravity="center"
+                                android:hint="数量"
+                                android:text=""
+                                android:textColor="@color/color_font1"
+                                android:textColorHint="@color/color_font4"
+                                android:textSize="@dimen/text_trans_28px" />
+
+                            <View
+                                android:layout_width="@dimen/trans_1px"
+                                android:layout_height="match_parent"
+                                android:background="@color/base_mask" />
+
+                            <com.fivefivelike.mybaselibrary.view.FontTextview
+                                android:layout_width="@dimen/trans_65px"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="+"
+                                android:textColor="@color/mark_color"
+                                android:textSize="@dimen/text_trans_40px"
+                                app:TypeFace="Bold" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_valuation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/trans_15px"
+                            android:layout_marginBottom="@dimen/trans_50px"
+                            android:gravity="center"
+                            android:text="估值"
+                            android:textColor="@color/color_font4"
+                            android:textSize="@dimen/text_trans_24px" />
+
+                        <com.fivefivelike.mybaselibrary.view.RoundButton
+                            android:id="@+id/tv_commit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/trans_40px"
+                            android:gravity="center"
+                            android:padding="@dimen/trans_13px"
+                            android:text="买入"
+                            android:textColor="@color/color_Primary"
+                            android:textSize="@dimen/text_trans_30px"
+                            app:btnCornerRadius="@dimen/trans_5px"
+                            app:btnSolidColor="@color/decreasing_color" />
+
+                        <LinearLayout
+                            android:id="@+id/lin_use"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/trans_10px"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.fivefivelike.mybaselibrary.view.LineTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/trans_15px"
+                                android:gravity="center"
+                                android:lines="1"
+                                android:text="可用"
+                                android:textColor="@color/color_font3"
+                                android:textSize="@dimen/text_trans_20px"
+                                app:cnNum="2" />
+
+                            <TextView
+                                android:id="@+id/tv_use"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/trans_40px"
+                                android:layout_weight="1"
+                                android:text="--"
+                                android:textColor="@color/color_font1"
+                                android:textSize="@dimen/text_trans_20px" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_transaction"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/trans_10px"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.fivefivelike.mybaselibrary.view.LineTextView
+                                android:id="@+id/tv_transaction_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/trans_15px"
+                                android:gravity="center"
+                                android:lines="1"
+                                android:text="可买"
+                                android:textColor="@color/color_font3"
+                                android:textSize="@dimen/text_trans_20px"
+                                app:cnNum="2" />
+
+                            <TextView
+                                android:id="@+id/tv_transaction"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/trans_40px"
+                                android:layout_weight="1"
+                                android:text="--"
+                                android:textColor="@color/color_font1"
+                                android:textSize="@dimen/text_trans_20px" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="151"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="@dimen/trans_20px">
+
+                            <TextView
+                                android:id="@+id/tv_show_price_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/trans_5px"
+                                android:paddingBottom="@dimen/trans_15px"
+                                android:text="价格"
+                                android:textColor="@color/color_font3"
+                                android:textSize="@dimen/text_trans_24px" />
+
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:id="@+id/tv_coin_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/trans_5px"
+                                android:paddingBottom="@dimen/trans_15px"
+                                android:text="数量"
+                                android:textColor="@color/color_font3"
+                                android:textSize="@dimen/text_trans_24px" />
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_buy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/trans_2px"
+                            android:layout_marginTop="@dimen/trans_5px"
+                            android:layout_marginRight="@dimen/trans_30px"
+                            android:layout_marginBottom="@dimen/trans_5px"
+                            android:background="@color/base_mask" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_sell"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/trans_2px"
+                            android:layout_marginTop="@dimen/trans_10px"
+                            android:layout_marginRight="@dimen/trans_30px"
+                            android:background="@color/base_mask" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/trans_15px"
+                            android:paddingBottom="@dimen/trans_10px">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingRight="@dimen/trans_15px"
+                                android:text="最新指数"
+                                android:textColor="@color/color_font3"
+                                android:textSize="@dimen/text_trans_24px" />
+
+                            <com.fivefivelike.mybaselibrary.view.SingleLineZoomTextView
+                                android:id="@+id/tv_latest_index"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textColor="@color/color_font2"
+                                android:textSize="@dimen/text_trans_24px" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/trans_25px">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingRight="@dimen/trans_15px"
+                                android:text="资金费率"
+                                android:textColor="@color/color_font3"
+                                android:textSize="@dimen/text_trans_24px" />
+
+                            <com.fivefivelike.mybaselibrary.view.SingleLineZoomTextView
+                                android:id="@+id/tv_fund_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textColor="@color/color_font2"
+                                android:textSize="@dimen/text_trans_24px" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/trans_2px"
+                    android:background="@color/base_mask" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/trans_30px"
+                    android:paddingTop="@dimen/trans_15px"
+                    android:paddingBottom="@dimen/trans_15px"
+                    android:text="交易历史"
+                    android:textColor="@color/color_font3"
+                    android:textSize="@dimen/text_trans_22px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/trans_2px"
+                    android:background="@color/base_mask" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:id="@+id/lin_no_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/trans_300px"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/str_no_data"
+                        android:textColor="@color/color_font4"
+                        android:textSize="@dimen/text_trans_30px" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.fivefivelike.mybaselibrary.view.SwipeRefreshLayout>
+</LinearLayout>

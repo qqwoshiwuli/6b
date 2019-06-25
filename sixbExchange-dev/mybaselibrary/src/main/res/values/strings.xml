@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">MyBaseLibrary</string>
+    <string name="ic_Back">&#xe643;</string>
+    <string name="ic_shuaxin">&#xe66d;</string>
+    <string name="ic_jinggao">&#xe620;</string>
+    <string name="str_confirm">确认</string>
+    <string name="str_determine">确定</string>
+    <string name="str_understanding">知道了</string>
+    <string name="str_ago">前</string>
+    <string name="str_after">后</string>
+    <string name="str_sec">秒</string>
+    <string name="str_min">分</string>
+    <string name="str_hrs">小时</string>
+    <string name="str_yesterday">昨天</string>
+    <string name="str_today">今天</string>
+    <string name="str_cancel">取消</string>
+    <string name="str_no_again_updata">不再提示</string>
+    <string name="str_send_again">重发</string>
+    <string name="str_get_code">获取验证码</string>
+    <string name="str_search">搜索</string>
+    <string name="str_success">成功</string>
+    <string name="str_failure">失败</string>
+    <string name="str_full_name">姓名</string>
+    <string name="str_delect">删除</string>
+    <string name="str_no_new_version">当前已是最新版本</string>
+    <string name="str_updata_official_website">点击浏览器下载</string>
+    <string name="str_default">默认</string>
+    <string name="str_more">更多</string>
+    <string name="str_all">全部</string>
+    <string name="str_input_invite_code">请输入邀请码(选填)</string>
+    <string name="str_please_input">请输入</string>
+
+    <string name="read_more">更多</string>
+    <string name="read_less">收起</string>
+    <string name="str_day">日</string>
+    <string name="str_sky">天</string>
+    <string name="str_week">周</string>
+    <string name="str_resend">重新发送</string>
+    <string name="str_durban_title">图片裁剪</string>
+    <string name="str_gallery">图库</string>
+    <string name="str_no_data">暂时没有数据</string>
+    <string name="str_no_data_by_service">暂时没有数据，服务器开了小差</string>
+    <string name="str_end_data">已经到底啦~</string>
+    <string name="str_no_network">网络加载出了点问题，请检查网络后重试</string>
+    <string name="str_input_true_double">请输入格式正确的数字</string>
+    <string name="str_refushing">正在刷新, 请等待</string>
+    <string name="str_refushing_end">已是最新数据</string>
+    <string name="str_in_download">下载中...</string>
+
+    <!--ShareDialog-->
+    <string name="str_share_default_title">币雷达</string>
+    <string name="str_share_default_content">币雷达的分享</string>
+    <string name="str_share_nocontent">没有分享内容!</string>
+    <string name="str_share_qq">QQ好友</string>
+    <string name="str_share_qq_space">QQ好友</string>
+    <string name="str_share_wechat">微信好友</string>
+    <string name="str_share_wechat_circle">微信朋友圈</string>
+    <string name="str_only_save_img">仅保存</string>
+    <string name="str_share_sina">新浪微博</string>
+    <string name="str_share_no">暂无可分享平台</string>
+    <string name="str_share_no_img">暂无图片可分享</string>
+    <string name="str_share_no_load">图片还未加载成功，请稍后</string>
+    <!--Permission-->
+    <string name="str_permission_read_write">没有读写权限,请开启权限</string>
+    <string name="str_permission_default">没有相关权限,请开启权限后操作</string>
+    <!--file-->
+    <string name="str_file_save">已保存在sd卡根目录</string>
+
+
+    <string name="browser_download">浏览器打开</string>
+    <string name="loacation_download">本地下载</string>
+    <string name="update_app_model_prepare">准备下载</string>
+    <string name="update_app_model_progress">正在下载 %1$d%2$s</string>
+    <string name="update_app_model_success">下载成功(点击安装)</string>
+    <string name="update_app_model_error">下载失败(点击浏览器下载)</string>
+    <string name="update_app_error">下载失败，是否去官网下载</string>
+    <string name="downloading_apk">正在后台下载...</string>
+    <string name="no_install_permission">没有应用内安装权限!</string>
+    <string name="isinstall_in_no_wifi">当前处于非wifi模式，是否继续下载?</string>
+
+
+    <string-array name="sa_select_pic">
+        <item>拍照</item>
+        <item>图库</item>
+    </string-array>
+    <string-array name="sa_select_web_setting">
+        <item>复制链接</item>
+        <item>外部浏览器打开</item>
+    </string-array>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/trans_35px"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/trans_1px"
+    android:layout_marginBottom="@dimen/trans_1px"
+    android:background="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trans_35px"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/view_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <View
+            android:id="@+id/view_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trans_35px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/trans_30px"
+        >
+
+        <com.fivefivelike.mybaselibrary.view.FontTextview
+            android:id="@+id/tv_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            app:TypeFace="Regular"
+            android:textColor="@color/color_font1"
+            android:textSize="@dimen/text_trans_24px"/>
+
+        <com.fivefivelike.mybaselibrary.view.FontTextview
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            app:TypeFace="Regular"
+            android:textColor="@color/color_font1"
+            android:textSize="@dimen/text_trans_24px"/>
+    </LinearLayout>
+
+
+</FrameLayout>
+
+

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.fivefivelike.mybaselibrary.view.ShadowLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/trans_15px"
+        android:layout_marginRight="@dimen/trans_15px"
+        android:clipChildren="false"
+        app:sl_cornerRadius="@dimen/trans_10px"
+        app:sl_dx="@dimen/trans_5px"
+        app:sl_dy="@dimen/trans_5px"
+        app:sl_shadowColor="@color/base_mask_dark_dark"
+        app:sl_shadowRadius="@dimen/trans_10px"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_mask_border_r5"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_white_radiu_t5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/trans_40px"
+                    android:paddingTop="@dimen/trans_40px"
+                    android:text="选择交易市场"
+                    android:textColor="@color/color_font3"
+                    android:textSize="@dimen/text_trans_28px"/>
+
+                <com.zhy.view.flowlayout.TagFlowLayout
+                    android:id="@+id/tagFlowLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/trans_25px"
+                    android:layout_marginLeft="@dimen/trans_50px"
+                    android:layout_marginTop="@dimen/trans_20px">
+
+
+                </com.zhy.view.flowlayout.TagFlowLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/trans_2px"
+                    android:background="@color/base_mask"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/trans_40px"
+                    android:paddingTop="@dimen/trans_20px"
+                    android:text="选择币种"
+                    android:textColor="@color/color_font3"
+                    android:textSize="@dimen/text_trans_28px"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_coins"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="@dimen/trans_499px"
+                    />
+
+
+            </LinearLayout>
+        </FrameLayout>
+    </com.fivefivelike.mybaselibrary.view.ShadowLayout>
+
+
+</LinearLayout>

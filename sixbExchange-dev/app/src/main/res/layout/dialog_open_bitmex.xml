@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/trans_110px"
+              android:layout_marginRight="@dimen/trans_110px"
+              android:background="@drawable/shape_white_radiu_t5"
+              android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/trans_45px"
+        android:lineSpacingExtra="@dimen/trans_20px"
+        android:text=""
+        android:textColor="@color/color_font1"
+        android:textSize="@dimen/text_trans_24px"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trans_1px"
+        android:background="@color/base_mask"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_default_click"
+            android:gravity="center"
+            android:padding="@dimen/trans_25px"
+            android:text="暂不开通"
+            android:textColor="@color/color_font3"
+            android:textSize="@dimen/text_trans_36px"/>
+
+        <View
+            android:layout_width="@dimen/trans_1px"
+            android:layout_height="match_parent"
+            android:background="@color/base_mask"/>
+
+        <TextView
+            android:id="@+id/tv_open"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_default_click"
+            android:gravity="center"
+            android:padding="@dimen/trans_25px"
+            android:text="确认开通"
+            android:textColor="@color/mark_color"
+            android:textSize="@dimen/text_trans_36px"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

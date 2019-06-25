@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">6b</string>
+    <string-array name="sa_select_login_title">
+        <item>登录</item>
+        <item>注册</item>
+    </string-array>
+    <string-array name="sa_select_bottom_title">
+        <item>交易</item>
+        <item>币币</item>
+        <item>跟单</item>
+        <item>资产</item>
+        <item>我的</item>
+    </string-array>
+    <string-array name="sa_select_transaction_title">
+        <item>交易</item>
+        <item>订单</item>
+        <item>持仓</item>
+    </string-array>
+    <string-array name="sa_select_okex_transaction_title">
+        <item>开仓</item>
+        <item>平仓</item>
+        <item>订单</item>
+        <item>持仓</item>
+    </string-array>
+    <string-array name="sa_select_change_margin_title">
+        <item>增加保证金</item>
+        <item>减少保证金</item>
+    </string-array>
+    <string-array name="sa_select_user_oredr">
+        <item>列表</item>
+        <item>持有</item>
+    </string-array>
+    <string-array name="sa_select_recharge">
+        <item>地址充值</item>
+        <item>资金划转</item>
+    </string-array>
+    <string-array name="sa_select_level">
+        <item>全仓</item>
+        <item>1x</item>
+        <item>3x</item>
+        <item>5x</item>
+        <item>8x</item>
+        <item>15x</item>
+        <item>20x</item>
+        <item>33x</item>
+        <item>50x</item>
+        <item>100x</item>
+    </string-array>
+    <string-array name="sa_select_kline_time_value">
+        <item>3m</item>
+        <item>5m</item>
+        <item>10m</item>
+        <item>15m</item>
+        <item>30m</item>
+        <item>1w</item>
+    </string-array>
+    <string-array name="sa_select_kline_time">
+        <item>3分</item>
+        <item>5分</item>
+        <item>10分</item>
+        <item>15分</item>
+        <item>30分</item>
+        <item>周K</item>
+    </string-array>
+    <string-array name="sa_select_kline_trend_value">
+        <item>5m_day</item>
+        <item>15m_week</item>
+        <item>1h_mouth</item>
+        <item>1d_year</item>
+        <item>1d_all</item>
+    </string-array>
+    <string-array name="sa_select_kline_trend">
+        <item>1天走势</item>
+        <item>1周走势</item>
+        <item>1月走势</item>
+        <item>1年走势</item>
+        <item>所有时间</item>
+    </string-array>
+</resources>

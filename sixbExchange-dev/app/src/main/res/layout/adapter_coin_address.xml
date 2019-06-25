@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/trans_15px"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/trans_40px"
+    android:paddingRight="@dimen/trans_40px">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/trans_100px"
+            android:text=""
+            android:textColor="@color/color_font1"
+            android:textSize="@dimen/text_trans_32px"/>
+
+        <TextView
+            android:id="@+id/tv_delect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/trans_20px"
+            android:paddingTop="@dimen/trans_20px"
+            android:text="删除"
+            android:textColor="@color/mark_color"
+            android:textSize="@dimen/text_trans_26px"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/trans_15px"
+        android:text=""
+        android:textColor="@color/color_font3"
+        android:textSize="@dimen/text_trans_26px"/>
+
+
+    <com.fivefivelike.mybaselibrary.view.DashView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trans_2px"
+        android:layout_marginTop="@dimen/trans_20px"
+        app:dashOrientation="0"
+        app:dashWidth="@dimen/trans_3px"
+        app:lineColor="@color/color_font4"
+        app:lineHeight="@dimen/trans_1px"
+        app:lineWidth="@dimen/trans_3px"
+        />
+
+</LinearLayout>

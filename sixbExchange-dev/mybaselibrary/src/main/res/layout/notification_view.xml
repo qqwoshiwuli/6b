@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mixtureTextView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/notification_large_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/notification_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/notification_large_icon"
+        android:text="Title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/trans_28px"/>
+
+    <TextView
+        android:id="@+id/notification_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notification_title"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/notification_large_icon"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/trans_20px"/>
+
+    <TextView
+        android:id="@+id/notification_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notification_time"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/notification_large_icon"
+        android:paddingBottom="4dp"
+        android:text="Message"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/trans_24px"/>
+
+    <ImageView
+        android:id="@+id/notification_small_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+
+</RelativeLayout>

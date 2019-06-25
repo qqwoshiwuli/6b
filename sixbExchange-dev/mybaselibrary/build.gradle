@@ -1,0 +1,124 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.qqwoshiwuli'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+
+    }
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile "com.android.support:appcompat-v7:${rootProject.ext.android.VSupportSdk}"
+    api "com.android.support:cardview-v7:${rootProject.ext.android.VSupportSdk}"
+    testCompile 'junit:junit:4.12'
+    //PushSDK必须依赖基础组件库，所以需要加入对应依赖
+    compile  'com.umeng.umsdk:common:latest.integration'
+    compile  'com.umeng.umsdk:analytics:8.0.0'
+    //PushSDK必须依赖utdid库，所以需要加入对应依赖
+    compile 'com.umeng.umsdk:utdid:1.1.5.3'
+    compile 'com.umeng.sdk:debug:1.0.0'
+//    //友盟社会化分享
+//    compile 'com.umeng.sdk:share-core:latest.integration'
+//    //compile 'com.umeng.sdk:share-qq:6.9.1.1'
+//    compile 'com.umeng.sdk:share-wechat:latest.integration'
+//    //compile 'com.umeng.sdk:share-sina:6.9.1'
+//    //分享面板
+//    compile 'com.umeng.umsdk:shareboard-widget:latest.integration'
+    //PushSDK
+    //compile 'com.umeng.sdk:push:4.1.0'
+   // compile project(':push')
+    compile (rootProject.ext.dependencies["andpermission"], {
+        exclude group: 'com.android.support'
+    })
+    compile (rootProject.ext.dependencies["hellodaemon"], {
+        exclude group: 'com.android.support'
+        exclude group: 'io.reactivex.rxjava2'
+    })
+    compile rootProject.ext.dependencies["appcompat-v7"]
+    compile rootProject.ext.dependencies["support-v4"]
+    compile rootProject.ext.dependencies["design"]
+    compile rootProject.ext.dependencies["annotations"]
+    compile rootProject.ext.dependencies["recyclerview-v7"]
+    compile rootProject.ext.dependencies["glide"]
+    compile rootProject.ext.dependencies["avi-loading"]
+    //compile rootProject.ext.dependencies["gson"]
+    compile rootProject.ext.dependencies["EventBus"]
+    //compile rootProject.ext.dependencies["rxbus"]
+    compile rootProject.ext.dependencies["rxandroid"]
+    compile rootProject.ext.dependencies["rxjava"]
+    compile rootProject.ext.dependencies["nohttp"]
+    compile rootProject.ext.dependencies["circleimageview"]
+    compile rootProject.ext.dependencies["chipsLayoutManager"]
+    compile rootProject.ext.dependencies["crop-photo"]
+    compile rootProject.ext.dependencies["rvadapter"]
+    compile rootProject.ext.dependencies["lvadapter"]
+    compile rootProject.ext.dependencies["circular"]
+    compile rootProject.ext.dependencies["album"]
+    compile rootProject.ext.dependencies["swiperecyclerview"]
+    compile rootProject.ext.dependencies["durban"]
+    compile rootProject.ext.dependencies["progresspieview"]
+    compile rootProject.ext.dependencies["fastjson"]
+    compile rootProject.ext.dependencies["okhttp3-integration"]
+    compile rootProject.ext.dependencies["status-bar"]
+    compile rootProject.ext.dependencies["utilcode"]
+    compile rootProject.ext.dependencies["multidex"]
+    //compile rootProject.ext.dependencies["websocket"]
+    compile rootProject.ext.dependencies["switchbutton"]
+    //compile rootProject.ext.dependencies["java-websocket"]
+    compile rootProject.ext.dependencies["flowlayout"]
+    compile rootProject.ext.dependencies["Luban"]
+    compile rootProject.ext.dependencies["androidbootstrap"]
+    compile rootProject.ext.dependencies["agentweb"]
+    compile rootProject.ext.dependencies["agentwebX5"]
+    compile rootProject.ext.dependencies["sonic"]
+    compile rootProject.ext.dependencies["jsbridge"]
+    //compile rootProject.ext.dependencies["DSBridge"]
+    compile rootProject.ext.dependencies["skin-support"]
+    compile rootProject.ext.dependencies["skin-support-design"]
+    compile rootProject.ext.dependencies["skin-support-cardview"]
+    compile rootProject.ext.dependencies["skin-support-constraint-layout"]
+    compile rootProject.ext.dependencies["align-text-view"]
+    compile rootProject.ext.dependencies["marqueeview"]
+    compile rootProject.ext.dependencies["easing"]
+    compile rootProject.ext.dependencies["androidanimations"]
+    compile rootProject.ext.dependencies["ultra"]
+    compile rootProject.ext.dependencies["roundedimageview"]
+    compile rootProject.ext.dependencies["youthbanner"]
+    compile rootProject.ext.dependencies["fragmentation"]
+    compile rootProject.ext.dependencies["fragmentation-core"]
+    compile rootProject.ext.dependencies["eventbus-activity-scope"]
+    annotationProcessor rootProject.ext.dependencies["bumptech"]
+    implementation files('libs/tbs_sdk_thirdapp_v3.6.0.1183_43604_sharewithdownload_withoutGame_obfs_20180211_105126.jar')
+    implementation files('libs/commons-compress-1.18.jar')
+}

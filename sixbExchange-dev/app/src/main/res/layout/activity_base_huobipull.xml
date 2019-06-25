@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7F9"
+    android:orientation="horizontal"    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="3">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="计价币种"
+        android:textSize="10sp"
+        android:textColor="#999999"
+        android:gravity="center"
+        android:padding="5dp"
+        />
+    <ListView
+        android:id="@+id/bizhong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:scrollbars="none"></ListView>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="交易币种"
+            android:textSize="10sp"
+            android:textColor="#999999"
+            android:layout_marginLeft="30dp"
+            android:padding="5dp"
+            />
+        <ListView
+            android:id="@+id/transactionbizhong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollbars="none"
+            ></ListView>
+    </LinearLayout>
+</LinearLayout>

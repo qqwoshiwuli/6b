@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lin_navigation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trans_1px"
+        android:background="@color/base_mask"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trans_100px"
+        android:clipChildren="false"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/lin_bottom1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trans_5px"
+                />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_icon1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/trans_5px"
+                android:layout_marginTop="@dimen/trans_10px"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trans_5px"
+                />
+
+
+            <skin.support.widget.SkinCompatTextView
+                android:id="@+id/tv_name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/navigation_color"
+                android:textSize="@dimen/text_trans_20px"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trans_10px"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_bottom2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trans_5px"
+                />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/trans_5px"
+                android:layout_marginTop="@dimen/trans_10px"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trans_5px"
+                />
+
+            <skin.support.widget.SkinCompatTextView
+                android:id="@+id/tv_name2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/color_font3"
+                android:textSize="@dimen/text_trans_20px"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trans_10px"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lin_bottom3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trans_5px"
+                />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_icon3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/trans_5px"
+                android:layout_marginTop="@dimen/trans_10px"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trans_5px"
+                />
+
+            <skin.support.widget.SkinCompatTextView
+                android:id="@+id/tv_name3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/color_font3"
+                android:textSize="@dimen/text_trans_20px"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trans_10px"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lin_bottom4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trans_5px"
+                />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_icon4"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/trans_5px"
+                android:layout_marginTop="@dimen/trans_10px"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trans_5px"
+                />
+
+            <skin.support.widget.SkinCompatTextView
+                android:id="@+id/tv_name4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/color_font3"
+                android:textSize="@dimen/text_trans_20px"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trans_10px"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

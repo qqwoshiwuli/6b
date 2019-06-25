@@ -1,0 +1,79 @@
+ext {
+
+    android = [
+            compileSdkVersion: 27,
+            buildToolsVersion: "27.0.0",
+
+            minSdkVersion    : 19,
+            targetSdkVersion : 27,
+
+            versionCode      : 2,
+            versionName      : '1.1.2',
+
+            VSupportSdk      : '27.1.0',
+    ]
+    dependencies = [
+            "appcompat-v7"                  : "com.android.support:appcompat-v7:${android["VSupportSdk"]}",
+            "support-v4"                    : "com.android.support:support-v4:${android["VSupportSdk"]}",
+            "design"                        : "com.android.support:design:${android["VSupportSdk"]}",
+            "annotations"                   : "com.android.support:support-annotations:${android["VSupportSdk"]}",
+            "recyclerview-v7"               : "com.android.support:recyclerview-v7:${android["VSupportSdk"]}",
+
+            "avi-loading"                   : "com.wang.avi:library:2.1.3",//loading动画
+            "gson"                          : "com.google.code.gson:gson:2.8.0",
+            //"rxbus"                  : "com.hwangjr.rxbus:rxbus:1.0.5",
+            "rxjava"                        : "io.reactivex.rxjava2:rxjava:2.0.7",
+            "rxandroid"                     : "io.reactivex.rxjava2:rxandroid:2.0.1",
+            "nohttp"                        : "com.yanzhenjie.nohttp:okhttp:1.1.11",//网络框架
+            "circleimageview"               : "de.hdodenhof:circleimageview:2.1.0",//圆形图片
+            "chipsLayoutManager"            : "com.beloo.widget:ChipsLayoutManager:0.3.7@aar",//流布局
+            "crop-photo"                    : "com.soundcloud.android:android-crop:1.0.1@aar",//裁剪
+            "rvadapter"                     : "com.zhy:base-rvadapter:3.0.3",
+            "lvadapter"                     : "com.zhy:base-adapter:3.0.3",
+            "album"                         : "com.yanzhenjie:album:2.0.2",//图库调用
+            "swiperecyclerview"             : "com.yanzhenjie:recyclerview-swipe:1.1.2",//闫振杰的多功能 list
+            "andpermission"                 : "com.yanzhenjie:permission:2.0.0-rc12",//权限
+            "durban"                        : "com.yanzhenjie:durban:1.0.1",//闫振杰裁剪
+            "glide"                         : "com.github.bumptech.glide:glide:4.1.1",//图片加载库
+            "bumptech"                      : "com.github.bumptech.glide:compiler:4.1.1",
+            "okhttp3-integration"           : "com.github.bumptech.glide:okhttp3-integration:4.1.1",
+            "progresspieview"               : "com.github.filippudak.progresspieview:library:1.0.4",//圆形进度
+            "subsampling-scale-image"       : "com.davemorrissey.labs:subsampling-scale-image-view:3.6.0",//展示高清大图
+            "fastjson"                      : "com.alibaba:fastjson:1.1.64.android",
+            "switchbutton"                  : "com.kyleduo.switchbutton:library:2.0.0",
+            "marqueeview"                   : "com.gongwen:marqueelibrary:1.1.3",
+            "hellodaemon"                   : "com.xdandroid:hellodaemon:+",
+
+            "circular"                      : "com.github.castorflex.smoothprogressbar:library-circular:1.2.0",//进度条
+            "status-bar"                    : "com.githang:status-bar-compat:latest.integration",
+            "EventBus"                      : "org.greenrobot:eventbus:3.1.1",
+            "utilcode"                      : "com.blankj:utilcode:1.14.2",//android 常用工具集合 有需要不要创建工具类到网上拷贝,直接搜索这个库,搜索所需功能
+            "multidex"                      : "com.android.support:multidex:1.0.2",
+            "websocket"                     : "com.dhh:websocket2:1.5.0",
+            "java-websocket"                : "org.java-websocket:Java-WebSocket:1.3.7",
+            "flowlayout"                    : "com.hyman:flowlayout-lib:1.1.2",//导航栏
+            "Luban"                         : "top.zibin:Luban:1.1.3",//图片压缩
+            "androidbootstrap"              : "com.beardedhen:androidbootstrap:2.0.1",//按钮库 https://github.com/Bearded-Hen/Android-Bootstrap
+            "agentweb"                      : "com.just.agentweb:agentweb:4.0.1",//webview https://github.com/Justson/AgentWeb
+            "agentwebX5"                    : "com.just.agentwebX5:agentwebX5:2.0.0",//webview https://github.com/Justson/AgentWeb
+            "sonic"                         : "com.tencent.sonic:sdk:2.0.0",
+            "jsbridge"                      : "com.github.lzyzsd:jsbridge:1.0.4",
+            "DSBridge"                      : "com.github.wendux:DSBridge-Android:x5-3.0-SNAPSHOT",
+
+            "skin-support"                  : "skin.support:skin-support:2.2.3",//皮肤库
+            "skin-support-design"           : "skin.support:skin-support-design:2.2.3",
+            "skin-support-cardview"         : "skin.support:skin-support-cardview:2.2.3",
+            "skin-support-constraint-layout": "skin.support:skin-support-constraint-layout:2.2.3",
+
+            "align-text-view"               : "me.codeboy.android:align-text-view:2.3.2",//字体对齐的TextView
+            "easing"                        : "com.daimajia.easing:library:2.0@aar",
+            "androidanimations"             : "com.daimajia.androidanimations:library:2.3@aar",
+            "ultra"                         : "in.srain.cube:ultra-ptr:1.0.11",
+            "roundedimageview"              : "com.makeramen:roundedimageview:2.3.0",
+            "youthbanner"                   : "com.youth.banner:banner:1.4.10",
+            "fragmentation"                 : "me.yokeyword:fragmentation:1.3.6",
+            "fragmentation-core"            : "me.yokeyword:fragmentation-core:1.3.6",
+            "eventbus-activity-scope"       : "me.yokeyword:eventbus-activity-scope:1.1.0",
+    ]
+
+}

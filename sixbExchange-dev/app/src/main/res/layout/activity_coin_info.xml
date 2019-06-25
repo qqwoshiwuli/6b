@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tl="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/include_toolbar_with_statusbar"/>
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/trans_90px"
+            android:layout_gravity="center_horizontal|bottom"
+            android:gravity="center"
+            android:textColor="@color/color_font1"
+            android:textSize="@dimen/text_trans_32px"/>
+    </FrameLayout>
+
+
+    <!--<com.fivefivelike.mybaselibrary.view.JudgeNestedScrollView-->
+    <!--android:id="@+id/judgeNestedScrollView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:clipChildren="false"-->
+    <!--android:layout_weight="1"-->
+    <!--&gt;-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lin_kline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/lin_kbg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/trans_50px"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/trans_20px">
+
+                    <TextView
+                        android:id="@+id/tv_minute"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="分时"
+                        android:textColor="@color/color_font2"
+                        android:textSize="@dimen/text_trans_24px"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/tv_minute_kline"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="分钟"
+                        android:textColor="@color/color_font2"
+                        android:textSize="@dimen/text_trans_24px"/>
+
+                    <TextView
+                        android:id="@+id/tv_5minute_kline"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="5分钟K"
+                        android:textColor="@color/color_font2"
+                        android:textSize="@dimen/text_trans_24px"/>
+
+                    <TextView
+                        android:id="@+id/tv_hour_kline"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="1小时K"
+                        android:textColor="@color/color_font2"
+                        android:textSize="@dimen/text_trans_24px"/>
+
+                    <TextView
+                        android:id="@+id/tv_day_kline"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="日K"
+                        android:textColor="@color/color_font2"
+                        android:textSize="@dimen/text_trans_24px"/>
+
+                    <com.sixbexchange.widget.DropDownView
+                        android:id="@+id/lin_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                    </com.sixbexchange.widget.DropDownView>
+
+                    <com.sixbexchange.widget.DropDownView
+                        android:id="@+id/lin_trend"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                    </com.sixbexchange.widget.DropDownView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/base_mask_less"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/trans_15px"
+                    android:paddingTop="@dimen/trans_15px">
+
+                    <TextView
+                        android:id="@+id/tv_kline_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/trans_5px"
+                        android:text=""
+                        android:textColor="@color/color_font3"
+                        android:textSize="@dimen/text_trans_18px"/>
+
+                    <TextView
+                        android:id="@+id/tv_kline_open"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/trans_5px"
+                        android:text=""
+                        android:textColor="@color/color_font2"
+                        android:textSize="@dimen/text_trans_18px"/>
+
+                    <TextView
+                        android:id="@+id/tv_kline_high"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/trans_5px"
+                        android:text=""
+                        android:textColor="@color/color_font2"
+                        android:textSize="@dimen/text_trans_18px"/>
+
+                    <TextView
+                        android:id="@+id/tv_kline_low"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/trans_5px"
+                        android:text=""
+                        android:textColor="@color/color_font2"
+                        android:textSize="@dimen/text_trans_18px"/>
+
+                    <TextView
+                        android:id="@+id/tv_kline_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/trans_5px"
+                        android:text=""
+                        android:textColor="@color/color_font2"
+                        android:textSize="@dimen/text_trans_18px"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_ma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/trans_5px"
+                    android:paddingLeft="@dimen/trans_15px"
+                    android:paddingTop="@dimen/trans_5px">
+
+                    <TextView
+                        android:id="@+id/tv_kline_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/trans_30px"
+                        android:text=""
+                        android:textColor="@color/color_font2"
+                        android:textSize="@dimen/text_trans_18px"/>
+
+                    <TextView
+                        android:id="@+id/tv_ma5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/trans_30px"
+                        android:text=""
+                        android:textColor="@color/ma5"
+                        android:textSize="@dimen/text_trans_18px"/>
+
+                    <TextView
+                        android:id="@+id/tv_ma10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/trans_30px"
+                        android:text=""
+                        android:textColor="@color/ma10"
+                        android:textSize="@dimen/text_trans_18px"/>
+
+                    <TextView
+                        android:id="@+id/tv_ma20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/trans_30px"
+                        android:text=""
+                        android:textColor="@color/ma20"
+                        android:textSize="@dimen/text_trans_18px"/>
+
+                </LinearLayout>
+
+
+                <com.fivefivelike.mybaselibrary.view.NoParentsTouchFramelayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false">
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/trans_360px"
+                        android:clipChildren="false">
+
+
+                        <com.sixbexchange.widget.chart.KCombinedChart
+                            android:id="@+id/combinedchart"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/trans_360px"
+                            android:paddingLeft="@dimen/trans_25px"
+                            >
+
+                        </com.sixbexchange.widget.chart.KCombinedChart>
+
+                        <TextView
+                            android:id="@+id/tv_kline_source"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/trans_45px"
+                            android:layout_gravity="right"
+                            android:gravity="center"
+                            android:paddingRight="@dimen/trans_20px"
+                            android:text=""
+                            android:textColor="@color/color_44c745"
+                            android:textSize="@dimen/text_trans_16px"
+                            android:visibility="gone"/>
+
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:id="@+id/fl_barchart"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/trans_140px"
+                        android:layout_marginTop="@dimen/trans_360px"
+                        android:clipChildren="false"
+                        >
+
+
+                        <com.sixbexchange.widget.chart.KCombinedChart
+                            android:id="@+id/barchart"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="@dimen/trans_25px"
+                            >
+
+                        </com.sixbexchange.widget.chart.KCombinedChart>
+
+                        <TextView
+                            android:id="@+id/tv_kline_vol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="@dimen/trans_10px"
+                            android:text=""
+                            android:textColor="@color/color_font3"
+                            android:textSize="@dimen/text_trans_18px"/>
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_loading"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/base_mask_less"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.wang.avi.AVLoadingIndicatorView
+                            android:id="@+id/aVLoadingIndicatorView"
+                            android:layout_width="@dimen/trans_100px"
+                            android:layout_height="@dimen/trans_100px"
+                            app:indicatorColor="@color/mark_color"
+                            app:indicatorName="BallScaleMultipleIndicator"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_loading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/trans_20px"
+                            android:text="K线加载中..."
+                            android:textColor="@color/color_font3"
+                            android:textSize="@dimen/text_trans_24px"/>
+
+                    </LinearLayout>
+                </com.fivefivelike.mybaselibrary.view.NoParentsTouchFramelayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/trans_10px"
+                    android:background="@color/base_mask"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--</com.fivefivelike.mybaselibrary.view.JudgeNestedScrollView>-->
+
+
+</LinearLayout>

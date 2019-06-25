@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar_with_statusbar"/>
+
+    <LinearLayout
+        android:id="@+id/lin_input1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/trans_40px"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/trans_40px"
+        android:paddingRight="@dimen/trans_40px">
+
+        <TextView
+            android:id="@+id/tv_input_label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="请输入手机号"
+            android:textColor="@color/color_font2"
+            android:textSize="@dimen/text_trans_24px"/>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <com.fivefivelike.mybaselibrary.view.IconFontTextview
+                    android:id="@+id/tv_area_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/trans_15px"
+                    android:paddingRight="@dimen/trans_10px"
+                    android:paddingTop="@dimen/trans_15px"
+                    android:text=""
+                    android:textColor="@color/color_font3"
+                    android:textSize="@dimen/text_trans_30px"/>
+
+                <com.fivefivelike.mybaselibrary.view.materialedittext.MaterialEditText
+                    android:id="@+id/et_input1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789"
+                    android:inputType="phone"
+                    android:maxLength="25"
+                    android:textColorHint="@color/color_font3"
+                    android:textSize="@dimen/trans_32px"
+                    app:met_baseColor="@color/white"
+                    app:met_primaryColor="@color/base_mask"
+                    app:met_textColor="@color/color_font2"
+                    app:met_textColorHint="@color/color_font4"
+                    app:met_underlineColor="@color/base_mask"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_get_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="center"
+                android:paddingLeft="@dimen/trans_30px"
+                android:text="@string/str_get_code"
+                android:textColor="@drawable/color_select_blue"
+                android:textSize="@dimen/text_trans_30px"/>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lin_input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/trans_20px"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/trans_40px"
+        android:paddingRight="@dimen/trans_40px">
+
+        <TextView
+            android:id="@+id/tv_input_label2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="请输入验证码"
+            android:textColor="@color/color_font2"
+            android:textSize="@dimen/text_trans_24px"/>
+
+        <com.fivefivelike.mybaselibrary.view.materialedittext.MaterialEditText
+            android:id="@+id/et_input2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:inputType="number"
+            android:maxLength="25"
+            android:textColorHint="@color/color_font3"
+            android:textSize="@dimen/trans_32px"
+            app:met_baseColor="@color/white"
+            app:met_primaryColor="@color/base_mask"
+            app:met_textColor="@color/color_font2"
+            app:met_textColorHint="@color/color_font4"
+            app:met_underlineColor="@color/base_mask"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/trans_120px"
+        android:layout_marginRight="@dimen/trans_120px"
+        android:layout_marginTop="@dimen/trans_100px"
+        android:background="@drawable/select_commit"
+        android:gravity="center"
+        android:padding="@dimen/trans_20px"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_trans_32px"/>
+
+    <TextView
+        android:id="@+id/tv_no_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/trans_20px"
+        android:gravity="center"
+        android:padding="@dimen/trans_20px"
+        android:text="收不到验证码？"
+        android:textColor="@color/mark_color"
+        android:textSize="@dimen/text_trans_30px"/>
+
+
+</LinearLayout>

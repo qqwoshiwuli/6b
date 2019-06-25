@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_Primary"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/trans_100px"
+        android:layout_marginTop="@dimen/trans_100px"
+        android:gravity="center"
+        android:text="您尚未开通BitMEX合约交易"
+        android:textColor="@color/color_font2"
+        android:textSize="@dimen/text_trans_40px"/>
+
+    <com.fivefivelike.mybaselibrary.view.RoundButton
+        android:id="@+id/tv_open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/trans_115px"
+        android:layout_marginRight="@dimen/trans_115px"
+        android:gravity="center"
+        android:padding="@dimen/trans_20px"
+        android:text="立即开通"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_trans_30px"
+        app:btnCornerRadius="@dimen/trans_5px"
+        app:btnSolidColor="@color/mark_color"/>
+
+</LinearLayout>

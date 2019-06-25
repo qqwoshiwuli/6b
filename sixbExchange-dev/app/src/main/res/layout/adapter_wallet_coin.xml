@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/trans_15px"
+        android:paddingTop="@dimen/trans_20px">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_piv"
+                android:layout_width="@dimen/trans_35px"
+                android:layout_height="@dimen/trans_35px"
+                android:layout_marginBottom="@dimen/trans_10px"
+                android:scaleType="fitXY"
+                />
+
+            <com.fivefivelike.mybaselibrary.view.FontTextview
+                android:id="@+id/tv_coin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/color_font1"
+                android:textSize="@dimen/text_trans_28px"
+                app:TypeFace="Bold"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="162"
+            android:orientation="vertical">
+
+            <com.fivefivelike.mybaselibrary.view.FontTextview
+                android:id="@+id/tv_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/trans_10px"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/color_font1"
+                android:textSize="@dimen/text_trans_32px"
+                app:TypeFace="Bold"/>
+
+            <TextView
+                android:id="@+id/tv_freeze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/color_font3"
+                android:textSize="@dimen/text_trans_20px"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="132"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_usd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/trans_15px"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/color_font3"
+                android:textSize="@dimen/text_trans_24px"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_transfer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/trans_15px"
+                    android:gravity="center"
+                    android:text="划转"
+                    android:textColor="@color/mark_color"
+                    android:textSize="@dimen/text_trans_24px"/>
+
+                <View
+                    android:layout_width="@dimen/trans_2px"
+                    android:layout_height="@dimen/trans_30px"
+                    android:background="@color/base_mask"/>
+
+                <TextView
+                    android:id="@+id/tv_recharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/trans_15px"
+                    android:layout_marginRight="@dimen/trans_15px"
+                    android:gravity="center"
+                    android:text="充值"
+                    android:textColor="@color/mark_color"
+                    android:textSize="@dimen/text_trans_24px"/>
+
+                <View
+                    android:layout_width="@dimen/trans_2px"
+                    android:layout_height="@dimen/trans_30px"
+                    android:background="@color/base_mask"/>
+
+                <TextView
+                    android:id="@+id/tv_withdraw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/trans_15px"
+                    android:gravity="center"
+                    android:text="提币"
+                    android:textColor="@color/mark_color"
+                    android:textSize="@dimen/text_trans_24px"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.fivefivelike.mybaselibrary.view.DashView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trans_2px"
+        android:layout_marginLeft="@dimen/trans_50px"
+        android:layout_marginRight="@dimen/trans_50px"
+        app:dashOrientation="0"
+        app:dashWidth="@dimen/trans_3px"
+        app:lineColor="@color/color_font4"
+        app:lineHeight="@dimen/trans_1px"
+        app:lineWidth="@dimen/trans_3px"
+        />
+
+
+</LinearLayout>

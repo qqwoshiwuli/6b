@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_Primary"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trans_90px"
+        android:layout_marginLeft="@dimen/trans_30px"
+        android:layout_marginRight="@dimen/trans_30px"
+        android:layout_marginTop="@dimen/trans_30px"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/shape_gray_border"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="单价"
+            android:paddingLeft="@dimen/trans_25px"
+            android:paddingRight="@dimen/trans_25px"
+            android:inputType="numberDecimal"
+            android:text=""
+            android:textColor="@color/color_font1"
+            android:textColorHint="@color/color_font4"
+            android:textSize="@dimen/text_trans_34px"/>
+
+        <TextView
+            android:id="@+id/tv_price_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/trans_30px"
+            android:gravity="center"
+            android:text="USD"
+            android:textColor="@color/color_font1"
+            android:textSize="@dimen/text_trans_34px"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trans_90px"
+        android:layout_marginLeft="@dimen/trans_30px"
+        android:layout_marginRight="@dimen/trans_30px"
+        android:layout_marginTop="@dimen/trans_30px"
+        android:background="@drawable/shape_gray_border"
+        android:gravity="center"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="数量"
+            android:paddingLeft="@dimen/trans_25px"
+            android:paddingRight="@dimen/trans_25px"
+            android:inputType="numberDecimal"
+            android:text=""
+            android:textColor="@color/color_font1"
+            android:textColorHint="@color/color_font4"
+            android:textSize="@dimen/text_trans_34px"/>
+
+        <TextView
+            android:id="@+id/tv_num_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/trans_30px"
+            android:gravity="center"
+            android:text="USD"
+            android:textColor="@color/color_font1"
+            android:textSize="@dimen/text_trans_34px"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/trans_30px"
+        android:layout_marginBottom="@dimen/trans_30px"
+        android:orientation="horizontal">
+
+        <com.fivefivelike.mybaselibrary.view.RoundButton
+            android:id="@+id/tv_close_all"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/trans_30px"
+            android:layout_marginRight="@dimen/trans_30px"
+            android:padding="@dimen/trans_12px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="市价全平"
+            android:textColor="@color/color_Primary"
+            app:btnSolidColor="@color/color_6BB578"
+            app:btnCornerRadius="@dimen/trans_499px"
+            android:textSize="@dimen/text_trans_36px" />
+        <com.fivefivelike.mybaselibrary.view.RoundButton
+            android:id="@+id/tv_close"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/trans_30px"
+            android:layout_marginRight="@dimen/trans_30px"
+            android:padding="@dimen/trans_12px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="平仓"
+            android:textColor="@color/color_Primary"
+            app:btnSolidColor="@color/color_6BB578"
+            app:btnCornerRadius="@dimen/trans_499px"
+            android:textSize="@dimen/text_trans_36px" />
+
+    </LinearLayout>
+
+</LinearLayout>

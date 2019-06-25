@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black_transparent_50"
+                android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:id="@+id/id_pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/trans_15px"
+            android:paddingTop="@dimen/trans_40px"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/trans_2px"
+            android:layout_marginTop="@dimen/trans_30px"
+            android:background="@color/base_mask"/>
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/str_cancel"
+            android:textColor="@color/color_blue"
+            android:textSize="@dimen/text_trans_32px"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

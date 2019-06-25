@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar_with_statusbar"/>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/trans_20px">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_pic"
+                    android:layout_width="@dimen/trans_130px"
+                    android:layout_height="@dimen/trans_130px"
+                    android:layout_marginLeft="@dimen/trans_50px"
+                    android:layout_marginRight="@dimen/trans_50px"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/trans_15px"
+                        android:gravity="center"
+                        android:text="--"
+                        android:textColor="@color/color_font1"
+                        android:textSize="@dimen/text_trans_34px"/>
+
+                    <TextView
+                        android:id="@+id/tv_uid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/trans_15px"
+                        android:gravity="center"
+                        android:text="UID --"
+                        android:textColor="@color/color_font3"
+                        android:textSize="@dimen/text_trans_22px"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/trans_40px"
+                        android:paddingTop="@dimen/trans_30px">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="实名状态"
+                            android:textColor="@color/color_font1"
+                            android:textSize="@dimen/text_trans_24px"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/trans_20px"
+                            android:gravity="center"
+                            android:text="未实名"
+                            android:textColor="@color/mark_color"
+                            android:textSize="@dimen/text_trans_24px"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trans_20px"
+                android:background="@color/base_mask"/>
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:visibility="gone"/>
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_invite"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:scaleType="fitXY"-->
+                <!--/>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trans_20px"
+                android:background="@color/base_mask"/>
+
+            <LinearLayout
+                android:id="@+id/lin1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_default_click"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/trans_30px"
+                    android:text="安全中心"
+                    android:textColor="@color/color_font1"
+                    android:textSize="@dimen/text_trans_34px"/>
+
+                <com.fivefivelike.mybaselibrary.view.IconFontTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/trans_30px"
+                    android:text="@string/ic_Next"
+                    android:textColor="@color/color_font2"
+                    android:textSize="@dimen/text_trans_34px"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trans_1px"
+                android:layout_marginLeft="@dimen/trans_30px"
+                android:background="@color/base_mask"/>
+
+            <LinearLayout
+                android:id="@+id/lin2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_default_click"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/trans_30px"
+                    android:text="产品反馈"
+                    android:textColor="@color/color_font1"
+                    android:textSize="@dimen/text_trans_34px"/>
+
+                <com.fivefivelike.mybaselibrary.view.IconFontTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/trans_30px"
+                    android:text="@string/ic_Next"
+                    android:textColor="@color/color_font2"
+                    android:textSize="@dimen/text_trans_34px"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trans_1px"
+                android:layout_marginLeft="@dimen/trans_30px"
+                android:background="@color/base_mask"/>
+
+            <LinearLayout
+                android:id="@+id/lin3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_default_click"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/trans_30px"
+                    android:text="检查更新"
+                    android:textColor="@color/color_font1"
+                    android:textSize="@dimen/text_trans_34px"/>
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="当前版本v.1.0.0"
+                    android:textColor="@color/color_font3"
+                    android:textSize="@dimen/text_trans_28px"/>
+
+                <com.fivefivelike.mybaselibrary.view.IconFontTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/trans_30px"
+                    android:text="@string/ic_Next"
+                    android:textColor="@color/color_font2"
+                    android:textSize="@dimen/text_trans_34px"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trans_1px"
+                android:layout_marginLeft="@dimen/trans_30px"
+                android:background="@color/base_mask"/>
+
+            <LinearLayout
+                android:id="@+id/lin4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_default_click"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/trans_30px"
+                    android:text="加入社群"
+                    android:textColor="@color/color_font1"
+                    android:textSize="@dimen/text_trans_34px"/>
+
+                <com.fivefivelike.mybaselibrary.view.IconFontTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/trans_30px"
+                    android:text="@string/ic_Next"
+                    android:textColor="@color/color_font2"
+                    android:textSize="@dimen/text_trans_34px"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trans_1px"
+                android:layout_marginLeft="@dimen/trans_30px"
+                android:background="@color/base_mask"/>
+
+            <LinearLayout
+                android:id="@+id/lin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_default_click"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/trans_30px"
+                    android:text="客服中心"
+                    android:textColor="@color/color_font1"
+                    android:textSize="@dimen/text_trans_34px"/>
+
+                <com.fivefivelike.mybaselibrary.view.IconFontTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/trans_30px"
+                    android:text="@string/ic_Next"
+                    android:textColor="@color/color_font2"
+                    android:textSize="@dimen/text_trans_34px"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trans_1px"
+                android:layout_marginLeft="@dimen/trans_30px"
+                android:background="@color/base_mask"/>
+
+            <LinearLayout
+                android:id="@+id/lin6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_default_click"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/trans_30px"
+                    android:text="常见问题"
+                    android:textColor="@color/color_font1"
+                    android:textSize="@dimen/text_trans_34px"/>
+
+                <com.fivefivelike.mybaselibrary.view.IconFontTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/trans_30px"
+                    android:text="@string/ic_Next"
+                    android:textColor="@color/color_font2"
+                    android:textSize="@dimen/text_trans_34px"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trans_50px"
+                android:background="@color/base_mask"/>
+
+            <TextView
+                android:id="@+id/tv_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_default_click"
+                android:gravity="center"
+                android:padding="@dimen/trans_25px"
+                android:text="退出登录"
+                android:textColor="@color/color_font1"
+                android:textSize="@dimen/text_trans_34px"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/trans_499px"
+                android:background="@color/base_mask"/>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
